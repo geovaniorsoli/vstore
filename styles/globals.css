@@ -7,6 +7,7 @@
     font-family: "semibold";
     src: url(/font/OverusedGrotesk-SemiBold.ttf);
 }
+
 @font-face {
     font-family: "bold";
     src: url(/font/OverusedGrotesk-ExtraBold.ttf);
@@ -17,13 +18,32 @@
     src: url(/font/Anton-Regular.ttf);
 }
 
-*{
+* {
     font-family: bold;
     margin: 0;
     padding: 0;
 }
 
-:root{
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+}
+
+
+:root {
     --white: #ffff;
     --secondary: #0073ff;
+    --background: rgb(15, 19, 40);
+    --black: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.text-foreground{
+    color: white;
 }

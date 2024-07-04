@@ -12,6 +12,7 @@ const BackgroundVideo = () => {
             <div className={styles.fallback}></div>
         </div>
     );
-};
+};        
+
 
 export default BackgroundVideo;

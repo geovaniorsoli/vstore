@@ -1,12 +1,49 @@
-.container {
+.containerMain {
     position: relative;
-    z-index: 10; 
+    z-index: 10;
     text-align: center;
-    margin-top: 20rem;
-    color: var(--white)
+    margin-top: 25rem;
+    color: var(--white);
+    height: 100vh;
 }
 
-.span{
+.containerCenter {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.containerCenterText {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 5rem;
+    padding: 15px;
+    width: 50%;
+    margin: 3rem auto;
+    text-align: center;
+    z-index: 2;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Subtitle {
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.Content {
+    color: var(--white);
+    padding: 20px;
+}
+
+.span {
     color: var(--secondary);
 }
 
@@ -21,36 +58,148 @@
     margin-bottom: 0.5rem;
 }
 
-.ButtonMain{
+.ButtonMain {
     background-color: var(--secondary);
     color: var(--white);
 }
 
-@media (max-width:600px){
+.title {
+    color: var(--white);
+    margin: 2rem auto;
+    font-size: 4rem;
+}
+
+.Subtitle {
+    font-size: 2rem;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    margin: 5rem auto;
+}
+
+.card {
+    background-color: #0062ff;
+    color: var(--white);
+    padding: 1px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    transform: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    scale: 1.04;
+}
+
+
+.headerCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.bodyCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 30px;
+    text-align: center;
+}
+
+.footerCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardLink {
+    color: var(--white);
+    gap: 5px;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.serviceTitle {
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.serviceDescription {
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgJett{
+    margin-left: -500px;
+}
+
+.AccordionContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.Accordion{
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width:600px) {
     .container {
         position: relative;
-        z-index: 10; 
+        z-index: 10;
         text-align: center;
         margin-top: 10rem;
         color: var(--white)
     }
-    
-    .span{
+
+    .span {
         color: var(--secondary);
     }
-    
+
     .secondaryTitle {
         font-size: 2rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .primaryTitle {
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 0.5rem;
     }
-    
-    .ButtonMain{
+
+    .ButtonMain {
         background-color: var(--secondary);
         color: var(--white);
     }
