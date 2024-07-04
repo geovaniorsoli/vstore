@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "semibold";
+    src: url(/font/OverusedGrotesk-SemiBold.ttf);
+}
+@font-face {
+    font-family: "bold";
+    src: url(/font/OverusedGrotesk-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Valorant";
+    src: url(/font/Valorant.ttf);
+}
+@font-face {
+    font-family: "ATON";
+    src: url(/font/Anton-Regular.ttf);
+}
+
+*{
+    font-family: bold;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #ffff;
+    --secondary: #0073ff;
+}
