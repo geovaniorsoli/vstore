@@ -11,10 +11,7 @@
     font-family: "bold";
     src: url(/font/OverusedGrotesk-ExtraBold.ttf);
 }
-@font-face {
-    font-family: "Valorant";
-    src: url(/font/Valorant.ttf);
-}
+
 @font-face {
     font-family: "ATON";
     src: url(/font/Anton-Regular.ttf);
