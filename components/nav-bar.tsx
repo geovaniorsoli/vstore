@@ -36,7 +36,7 @@ export default function NavigationBar() {
                 </div>
                 <div className={sty.navCenter}>
                     <Link className={sty.navLink} href="/">
-                        <Image className={sty.img}  alt="logotipo" src="/img/logotipoBranca.png" width={200} height={500} />
+                        <Image className={sty.img}  alt="logotipo" src="./img/logotipoBranca.png" width={200} height={500} />
                     </Link>
                 </div>
                 <div className={sty.navRight}>
