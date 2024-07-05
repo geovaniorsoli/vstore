@@ -1,4 +1,5 @@
 "use client"
+
 import NavigationBar from "@/components/nav-bar";
 import Background from "@/components/background";
 import sty from "../styles/home.module.css";

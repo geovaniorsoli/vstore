@@ -12,8 +12,26 @@
 .navbarContent {
     display: flex;
     justify-content: center;
+    justify-items:center;
+    margin: 0 auto;
     align-items: center;
-    filter: blur(0);
+    width: 100%;
+}
+
+.navLeft,
+.navRight {
+    display: flex;
+    justify-content: center;
+    justify-items:center;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+}
+
+.navCenter {
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
 }
 
 .navLink {
@@ -22,22 +40,24 @@
     margin: 1rem;
 }
 
-
-.navItemContainer{
-    gap: 3rem;
+.iconNav {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: var(--white);
 }
 
-.openNav{
+.openNav {
     background: none;
 }
 
-.openNavLink{
+.openNavLink {
     color: var(--white);
 }
 
 .img {
     max-height: auto;    
     margin: 0 auto;
+    width: 100%;
 }
 
 .imgMobile {
@@ -46,8 +66,7 @@
     margin: 0 auto;
 }
 
-
-@media (max-width:600px){
+@media (max-width: 600px) {
     .navbarContent {
         display: none;
     }

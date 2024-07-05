@@ -1,56 +1,66 @@
 "use client";
-import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
+import { Navbar, Tooltip, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 import Image from "next/image";
-import sty from "../styles/Componentes/nav.module.css"
-import * as lucide from "lucide-react"
-import Icon from "../components/icons";
+import sty from "../styles/Componentes/nav.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDiscord, faInstagram, faTiktok, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export default function NavigationBar() {
     const menuItems = [
-        {text: "DUOBOOST", href: "/"},
-        {text: "ELOJOB", href: "/"},
-        {text: "VITÓRIAS", href: "/"},
-        {text: "DISCORD", href: "/"},
-    ]
+        { text: "DUOBOOST", href: "/elojob" },
+        { text: "ELOJOB", href: "/" },
+        { text: "VITÓRIAS", href: "/" },
+        { text: "DISCORD", href: "/" },
+    ];
+
+    const iconsMedia = [
+        { name: "Discord", icon: faDiscord, href: "/" },
+        { name: "Instagram", icon: faInstagram, href: "/" },
+        { name: "Tiktok", icon: faTiktok, href: "/" },
+        { name: "Whatsapp", icon: faWhatsapp, href: "/" },
+    ];
 
     return (
         <Navbar isBlurred className={sty.navbar}>
-        <NavbarContent className="sm:hidden" justify="center">
-            <NavbarMenuToggle />
-        </NavbarContent>
-        <NavbarContent className={`hidden sm:flex ${sty.navbarContent}`}>
-            <NavbarItem className={sty.navItemContainer}>
-                <Link className={sty.navLink} href="#">
-                    DUOBOOST
-                </Link>
-                <Link className={sty.navLink} href="#">
-                    ELOJOB
-                </Link>
-                
-            </NavbarItem>
-            <Image className={sty.img} alt="logotipo" src="/img/logotipoBranca.png" width={200} height={500} />
-            <NavbarItem>
-                <Link className={sty.navLink} href="#">
-                    VITÓRIAS
-                </Link>
-                <Link className={sty.navLink} href="#">
-                    COACH
-                </Link>
-                <Button variant="solid" color="primary" href="#">
-                    CONTATOS
-                </Button>
-            </NavbarItem>
-        </NavbarContent>
-        <Image className="sm:hidden" alt="logotipo" src="/img/logotipoBranca.png" width={100} height={300} />
+            <NavbarContent className="sm:hidden" justify="center">
+                <NavbarMenuToggle />
+            </NavbarContent>
+            <div className={sty.navbarContent}>
+                <div className={sty.navLeft}>
+                    <Link className={sty.navLink} href="#">
+                        DUOBOOST
+                    </Link>
+                    <Link className={sty.navLink} href="/elojob">
+                        ELOJOB
+                    </Link>
+                </div>
+                <div className={sty.navCenter}>
+                    <Link className={sty.navLink} href="/">
+                        <Image className={sty.img}  alt="logotipo" src="/img/logotipoBranca.png" width={200} height={500} />
+                    </Link>
+                </div>
+                <div className={sty.navRight}>
+                    <Link className={sty.navLink} href="#">
+                        VITÓRIAS
+                    </Link>
+                    <Link className={sty.navLink} href="#">
+                        COACH
+                    </Link>
+                    {iconsMedia.map((item, index) => (
+                        <Tooltip color="primary" content={item.name} key={index} placement="bottom">
+                        <Link className={sty.iconNav} key={index} href={item.href}>
+                            <FontAwesomeIcon icon={item.icon} />
+                        </Link>
+                            </Tooltip>
+                    ))}
+                </div>
+            </div>
+            <Image className="sm:hidden" alt="logotipo" src="/img/logotipoBranca.png" width={100} height={300} />
             <NavbarMenu className={sty.openNav}>
                 {menuItems.map((text, index) => (
                     <NavbarMenuItem className={sty.openNav} key={`${text}-${index}`}>
-                        <Link
-                            className={sty.openNavLink}
-                            href={text.href}
-                            size="lg"
-                        >
-                        {text.text}
+                        <Link className={sty.openNavLink} href={text.href} size="lg">
+                            {text.text}
                         </Link>
                     </NavbarMenuItem>
                 ))}
