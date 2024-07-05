@@ -5,6 +5,7 @@ import sty from "../styles/home.module.css";
 import { Card, CardHeader, CardBody, CardFooter, Link, Button, Accordion, AccordionItem } from "@nextui-org/react";
 import Image from "next/image";
 import * as lucide from "lucide-react";
+import Footer from "../components/footer"
 
 const cardItems = [
   { title: "DUOBOOST", body: "Você irá jogar duo com um jogador profissional até o elo desejado.", url: "/#service" },
@@ -44,6 +45,9 @@ export default function Home() {
         </h1>
         <Button as={Link} href="#service" size="lg" color="primary"> NOSSOS SERVIÇOS </Button>
       </div>
+
+      <Image className={sty.imgVandal} alt="vandal" src="/img/vandal.webp" width={300} height={300} />
+
       <Background />
       <div id="service">
         <div className={sty.containerCenter}>
@@ -132,6 +136,7 @@ export default function Home() {
           ))}
         </Accordion>
       </div>
+    <Footer/>
     </>
   );
 }
