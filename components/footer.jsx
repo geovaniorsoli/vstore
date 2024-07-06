@@ -48,9 +48,9 @@ export default function Footer() {
                 <ModalContent>
                     {(onClose) => (
                         <>
-                            <ModalHeader className="flex flex-col gap-1 text-black">Politicas de privacidade e termos</ModalHeader>
+                            <ModalHeader className="flex flex-col gap-1">Politicas de privacidade e termos</ModalHeader>
                             <ModalBody>
-                                <ScrollShadow hideScrollBar className="w-[300px] h-[400px] flex-col items-center justify-center flex text-black">
+                                <ScrollShadow hideScrollBar className="w-[300px] h-[400px] flex-col items-center justify-center flex ">
                                     Lorem ipsum, dolor sit amet consectetur
                                     adipisicing elit. Ex temporibus sit
                                     soluta non ducimus adipisci, esse tempora
