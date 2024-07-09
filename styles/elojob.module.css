@@ -4,31 +4,102 @@
     font-size: 4rem;
 }
 
-.containerCenter {
+.subtitle {
+    color: var(--white);
+    margin: 1rem auto;
+    font-size: 1rem;
+}
+
+.containerMain {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
-    gap: 1rem;
+    width: 80%;
     margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
 }
 
-.containerMain{
-    display: grid;
+.titlecontainer{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    padding: 0 auto;
-    height: 100vh;
-}
-
-.containerTitle{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     width: 50%;
     margin: 0 auto;
-    height: 50vh;
-
+    padding: 2rem;
 }
+
+.card {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.selectContainer {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.selectWithAvatar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.checkboxGroup {
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.checkboxContent {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.select {
+    flex: 1;
+}
+
+.icon {
+    margin-left: 0.5rem; 
+}
+
+.selectedAvatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+
