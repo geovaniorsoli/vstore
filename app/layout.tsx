@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
+import { Toaster } from 'sonner';
 import clsx from "clsx";
 
 import { Providers } from "./providers";
@@ -29,6 +30,7 @@ export default function RootLayout({
           <div>
             <main>
               {children}
+              <Toaster richColors={true} closeButton={true} theme="dark" position="top-right" />
             </main>
             <footer>
             </footer>
