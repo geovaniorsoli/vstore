@@ -11,12 +11,15 @@ export default function NavigationBar() {
         { text: "ELOJOB", href: "/elojob" },
         { text: "VITÓRIAS", href: "/vitorias" },
         { text: "DISCORD", href: "/" },
+        { text: "TIKTOK", href: "/" },
+        { text: "INSTAGRAM", href: "http://tiktok.com/@vstorefn1" },
+        { text: "WHASTAPP", href: "/" },
     ];
 
     const iconsMedia = [
         { name: "Discord", icon: faDiscord, href: "/" },
-        { name: "Instagram", icon: faInstagram, href: "/" },
-        { name: "Tiktok", icon: faTiktok, href: "/" },
+        { name: "Instagram", icon: faInstagram, href: "https://www.instagram.com/vstorefn/" },
+        { name: "Tiktok", icon: faTiktok, href: "http://tiktok.com/@vstorefn1" },
         { name: "Whatsapp", icon: faWhatsapp, href: "/" },
     ];
 
@@ -55,7 +58,7 @@ export default function NavigationBar() {
                     ))}
                 </div>
             </div>
-            <Image className="sm:hidden" alt="logotipo" src="/img/logotipoBranca.png" width={100} height={300} />
+            <img className="sm:hidden" alt="logotipo" src="/logotipoBranca.png" width={100} height={300} />
             <NavbarMenu className={sty.openNav}>
                 {menuItems.map((text, index) => (
                     <NavbarMenuItem className={sty.openNav} key={`${text}-${index}`}>

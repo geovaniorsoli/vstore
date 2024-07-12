@@ -1,4 +1,3 @@
-/* styles/Componentes/footer.module.css */
 .footer {
     background-color: var(--black);
     color: var(--white);
@@ -50,4 +49,30 @@
 
 .footerCopy p {
     margin: 5px 0;
+}
+
+
+@media (max-width:600){
+    .footer {
+        background-color: var(--black);
+        color: var(--white);
+        padding: 50px;
+        margin-top: 8rem;
+    }
+    
+    .footerContent {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+        
+    .footerValorant {
+        flex: 1;
+        margin: 20px 0;
+        font-size: 20px;
+    }
 }

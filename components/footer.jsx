@@ -1,7 +1,6 @@
 import { Link } from "@nextui-org/react";
 import styles from "../styles/Componentes/footer.module.css";
 import { Modal, ScrollShadow, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
-import * as lucide from "lucide-react"
 export default function Footer() {
 
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -14,7 +13,7 @@ export default function Footer() {
                         <img alt="logo" src="/logotipobranca.png" width={150} height={150} />
                     </div>
                     <div className={styles.footerLinks}>
-                        <h3>SERVIÇOS <lucide Gear /> </h3>
+                        <h3>SERVIÇOS </h3>
                         <Link href="/duoboost" color="primary">DuoBoost</Link>
                         <Link href="/elojob" color="primary">Elojob</Link>
                         <Link href="/vitorias" color="primary">Vitórias</Link>
@@ -24,8 +23,8 @@ export default function Footer() {
                         <h3>LINKS</h3>
                         <Link href="/duoboost" color="primary">Discord</Link>
                         <Link href="/elojob" color="primary">Whatsapp</Link>
-                        <Link href="/vitorias" color="primary">Instagram</Link>
-                        <Link href="/coach" color="primary">Tiktok</Link>
+                        <Link href="https://www.instagram.com/vstorefn/" color="primary">Instagram</Link>
+                        <Link href="http://tiktok.com/@vstorefn1" color="primary">Tiktok</Link>
                     </div>
                     <div className={styles.footerLinks}>
                         <h3>ÁREA DO CLIENTE</h3>

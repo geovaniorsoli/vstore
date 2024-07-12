@@ -116,3 +116,122 @@
 }
 
 
+@media (max-width:600) {
+    .title {
+        color: var(--white);
+        margin-top: 5rem;
+        font-size: 4rem;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .title:hover {
+        color: var(--secondary);
+        margin-top: 5rem;
+        font-size: 4rem;
+    }
+    
+    .subtitle {
+        color: var(--secondWhite);
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .containerMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        min-height: 100vh;
+    }
+    
+    .titlecontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .cardHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .cardBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    .cardFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .selectContainer {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .selectWithAvatar {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .checkboxGroup {
+        display: grid;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .flex {
+        display: flex;
+        align-items: center;
+    }
+    
+    .checkboxContent {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem; 
+    }
+    
+    .select {
+        flex: 1;
+    }
+    
+    .icon {
+        margin-left: 0.5rem; 
+    }
+    
+    .selectedAvatar {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+    
+    .img{
+        margin-top: 6rem;
+    }
+    
+}

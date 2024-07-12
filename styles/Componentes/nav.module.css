@@ -52,12 +52,15 @@
 
 .openNavLink {
     color: var(--white);
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 .img {
     max-height: auto;    
     margin: 0 auto;
     width: 50%;
+    display: block;
 }
 
 .imgMobile {
@@ -79,5 +82,9 @@
         z-index: 1000;
         background: none;
         padding: 0;
+    }
+
+    .img {
+        display: none;
     }
 }
