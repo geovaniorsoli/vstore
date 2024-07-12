@@ -160,7 +160,8 @@ export default function Vitorias() {
                 <div className={sty.titlecontainer}>
                     <h1 className={sty.title}>VITÓRIAS</h1>
                     <h2 className={sty.subtitle}>
-                        m ProPlayer jogará com você até você alcançar o Elo desejado. Não é necessário passar os dados da conta, pois um Radiante jogará em outra conta junto com você!                    </h2>
+                        Impulsione sua conta comprando vitórias avulsas no Elo desejado
+                    </h2>
                 </div>
                 <Card className={sty.card}>
                     <CardHeader className={sty.cardHeader}>
@@ -332,16 +333,10 @@ export default function Vitorias() {
 
                 <div className={sty.titlecontainer}>
                     <h2 className={sty.subtitle}>
-                        No DUOBOOST/EloBoost, um jogador ProPlayer de nível Radiante irá logar em sua
-                        conta e jogar por você, como se fosse você, e irá upar até o Elo que você
-                        contratou. Tudo feito de forma rápida, discreta e segura.
-                        Não utilizamos hacks ou qualquer tipo de programa ou recurso que dê vantagem extra --
-                        trata-se de um serviço premium feito por ProPlayers de verdade do cenário
-                        competitivo profissional.
-                    </h2>
+                    impulsione sua conta comprando vitórias avulsas ao invés de divisões! Nesta modalidade, você irá receber em sua conta o número líquido de vitórias compradas. Por exemplo: você comprou 2 vitórias, mas o booster ganhou 1 jogo e perdeu o outro. Nesse caso, seu booster deverá jogar 3 partidas no total, ganhando na terceira. Ideal para quem quer garantir o rank de ato, uma partida importante ou melhorar o MMR da conta.                    </h2>
                 </div>
 
-                <img className={sty.img} alt="phantom" src="/sentinelaLuz.webp" width={200} height={200} />
+                <img className={sty.img} alt="phantom" src="/vandalSaqueadora.webp" width={200} height={200} />
 
             </div>
             <Footer />

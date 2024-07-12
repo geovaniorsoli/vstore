@@ -29,7 +29,6 @@ import * as lucide from "lucide-react"
 import sty from "../../styles/elojob.module.css"
 import NavigationBar from "@/components/nav-bar"
 import Footer from "@/components/footer"
-import Image from 'next/image'
 
 
 export default function Duoboost() {

@@ -8,9 +8,9 @@ import * as lucide from "lucide-react";
 import Footer from "../components/footer"
 
 const cardItems = [
-  { title: "DUOBOOST", body: "Você irá jogar duo com um jogador profissional até o elo desejado.", url: "/#service" },
-  { title: "ELOJOB", body: "Um jogador profissional irá garantir o elo desejado jogando em sua conta.", url: "/" },
-  { title: "VITÓRIAS", body: "Escolha quantas vitórias deseja em sua conta.", url: "/" },
+  { title: "DUOBOOST", body: "Você irá jogar duo com um jogador profissional até o elo desejado.", url: "/duoboost" },
+  { title: "ELOJOB", body: "Um jogador profissional irá garantir o elo desejado jogando em sua conta.", url: "/elojob" },
+  { title: "VITÓRIAS", body: "Escolha quantas vitórias deseja em sua conta.", url: "/vitorias" },
   { title: "COACH", body: "Melhore sua gameplay através de aulas práticas com professores.", url: "/" }
 ];
 
@@ -55,6 +55,7 @@ export default function Home() {
         </div>
         <div className={sty.cardContainer}>
           {cardItems.map((item, index) => (
+            <Link href={item.url}> 
             <Card key={index} isPressable className={sty.card}>
               <CardHeader className={sty.headerCard}>
                 <div className={sty.bodyCard}>
@@ -68,6 +69,7 @@ export default function Home() {
                 <Link href={item.url} className={sty.cardLink} size="lg"> ADQUIRIR <lucide.MoveRight /> </Link>
               </CardFooter>
             </Card>
+            </Link>
           ))}
         </div>
       </div>
@@ -109,7 +111,7 @@ export default function Home() {
               <p className={sty.serviceDescription}>Temos várias opções para atingir seus objetivos. Selecione a que melhor se adapta a você.</p>
             </li>
             <li>
-              <h2 className={sty.serviceTitle}>2. Pesonalize</h2>
+              <h2 className={sty.serviceTitle}>2. Personalize</h2>
               <p className={sty.serviceDescription}>Escolha os detalhes do seu pedido e clique em "comprar". Isso o levará para o WhatsApp.</p>
             </li>
             <li>
