@@ -355,7 +355,7 @@ export default function Duoboost() {
                     </h2>
                 </div>
 
-                <img className={sty.img} alt="phantom" src="./img/sentinelaLuz.webp" width={200} height={200} />
+                <img className={sty.img} alt="phantom" src="/sentinelaLuz.webp" width={200} height={200} />
 
             </div>
             <Footer />

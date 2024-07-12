@@ -358,7 +358,7 @@ export default function EloJob() {
                     </h2>
                 </div>
 
-                <Image className={sty.img} alt="phantom" src="/img/vandalGaia.webp" width={200} height={200} />
+                <img className={sty.img} alt="phantom" src="/vandalGaia.webp" width={200} height={200} />
 
             </div>
             <Footer />
