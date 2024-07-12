@@ -154,11 +154,11 @@
     justify-content: center;
 }
 
-.imgJett{
+.imgJett {
     margin-left: -500px;
 }
 
-.AccordionContainer{
+.AccordionContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,7 +166,7 @@
     width: 50%;
 }
 
-.Accordion{
+.Accordion {
     background-color: var(--secondary);
     color: white;
     border-radius: 15px;
@@ -174,7 +174,7 @@
     margin-bottom: 1rem;
 }
 
-.imgVandal{
+.imgVandal {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,12 +183,49 @@
 
 
 @media (max-width:600px) {
-    .container {
+    .containerMain {
         position: relative;
         z-index: 10;
         text-align: center;
-        margin-top: 10rem;
+        margin-top: 17rem;
         color: var(--white);
+        height: 100vh;
+    }
+
+    .containerCenter {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .containerCenterText {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        gap: 5rem;
+        padding: 15px;
+        width: 90%;
+        margin: 1rem auto;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Subtitle {
+        font-size: 1rem;
+        color: var(--secondary);
+    }
+
+    .Content {
+        color: var(--white);
+        padding: 20px;
     }
 
     .span {
@@ -197,7 +234,7 @@
 
     .secondaryTitle {
         font-size: 2rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0rem;
     }
 
     .primaryTitle {
@@ -209,5 +246,132 @@
     .ButtonMain {
         background-color: var(--secondary);
         color: var(--white);
+    }
+
+    .title {
+        color: var(--white);
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+
+    .Subtitle {
+        font-size: 2rem;
+    }
+
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        padding: 16px;
+        margin: 5rem auto;
+    }
+
+    .card {
+        background-color: #0062ff;
+        color: var(--white);
+        padding: 1px;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+
+
+    .serviceList {
+        display: grid;
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+
+    .headerCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .bodyCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 30px;
+        text-align: center;
+    }
+
+    .footerCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cardLink {
+        color: var(--white);
+        gap: 5px;
+    }
+
+    .background {
+        display: none;
+    }
+
+    .serviceTitle {
+        font-size: 2rem;
+        color: var(--secondary);
+        margin: 1rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .serviceDescription {
+        font-size: 1.2rem;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .imageContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgJett {
+        margin-left: -500px;
+        display: none;
+    }
+
+    .AccordionContainer {
+        width: 95%;
+    }
+
+    .Accordion {
+        background-color: var(--secondary);
+        color: white;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .imgVandal {
+        margin: 1rem auto;
+        width: 200px;
+    }
+
+    .title{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 2rem auto;
+        text-align: center;
     }
 }
