@@ -10,7 +10,7 @@ import Footer from "../components/footer"
 const cardItems = [
   { title: "DUOBOOST", body: "Você irá jogar duo com um jogador profissional até o elo desejado.", url: "/duoboost" },
   { title: "ELOJOB", body: "Um jogador profissional irá garantir o elo desejado jogando em sua conta.", url: "/elojob" },
-  { title: "VITÓRIAS", body: "Escolha quantas vitórias deseja em sua conta.", url: "/vitorias" },
+  { title: "VITÓRIAS", body: "Escolha quantas vitórias deseja receber por um profissional em sua conta.", url: "/vitorias" },
   { title: "COACH", body: "Melhore sua gameplay através de aulas práticas com professores.", url: "/" }
 ];
 
