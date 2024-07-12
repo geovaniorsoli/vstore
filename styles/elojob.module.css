@@ -1,12 +1,21 @@
 .title {
     color: var(--white);
-    margin: 2rem auto;
+    margin-top: 10rem;
+    font-size: 4rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: var(--secondary);
+    margin-top: 10rem;
     font-size: 4rem;
 }
 
 .subtitle {
-    color: var(--white);
+    color: var(--secondWhite);
     margin: 1rem auto;
+    text-align: center;
     font-size: 1rem;
 }
 

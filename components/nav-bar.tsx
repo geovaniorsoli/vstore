@@ -9,7 +9,7 @@ export default function NavigationBar() {
     const menuItems = [
         { text: "DUOBOOST", href: "/duoboost" },
         { text: "ELOJOB", href: "/elojob" },
-        { text: "VITÓRIAS", href: "/" },
+        { text: "VITÓRIAS", href: "/vitorias" },
         { text: "DISCORD", href: "/" },
     ];
 
@@ -40,7 +40,7 @@ export default function NavigationBar() {
                     </Link>
                 </div>
                 <div className={sty.navRight}>
-                    <Link className={sty.navLink} href="#">
+                    <Link className={sty.navLink} href="/vitorias">
                         VITÓRIAS
                     </Link>
                     <Link className={sty.navLink} href="#">

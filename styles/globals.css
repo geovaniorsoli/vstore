@@ -34,6 +34,7 @@ body {
 
 :root {
     --white: #ffff;
+    --secondWhite: #c6c6c6;
     --secondary: #0073ff;
     --background: rgb(15, 19, 40);
     --black: #000000;
