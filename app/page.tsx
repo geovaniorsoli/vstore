@@ -47,7 +47,7 @@ export default function Home() {
         <Button as={Link} href="#service" size="lg" color="primary"> NOSSOS SERVIÇOS </Button>
       </div>
 
-      <Image className={sty.imgVandal} alt="vandal" src="/img/vandal.webp" width={300} height={300} />
+      <img className={sty.imgVandal} alt="vandal" src="/img/vandal.webp" width={300} height={300} />
 
       <Background />
       <div id="service">
@@ -77,7 +77,7 @@ export default function Home() {
 
         <h1 className={sty.title}> VANTAGENS DE NOSSO SERVIÇO </h1>
       </div>
-      <Image className={sty.background} alt="background" src="/img/background.png" width={1920} height={1080} />
+      <img className={sty.background} alt="background" src="/img/background.png" width={1920} height={1080} />
 
       <div className={sty.containerCenterText}>
 
@@ -119,7 +119,7 @@ export default function Home() {
             </li>
           </ul>
 
-          <Image className={sty.imgJett} alt="jett" src="/img/JETT.webp" width={500} height={500} />
+          <img className={sty.imgJett} alt="jett" src="/img/JETT.webp" width={500} height={500} />
         </div>
 
       </div>
