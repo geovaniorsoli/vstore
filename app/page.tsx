@@ -4,7 +4,6 @@ import NavigationBar from "@/components/nav-bar";
 import Background from "@/components/background";
 import sty from "../styles/home.module.css";
 import { Card, CardHeader, CardBody, CardFooter, Link, Button, Accordion, AccordionItem } from "@nextui-org/react";
-import Image from "next/image";
 import * as lucide from "lucide-react";
 import Footer from "../components/footer"
 
@@ -47,7 +46,7 @@ export default function Home() {
         <Button as={Link} href="#service" size="lg" color="primary"> NOSSOS SERVIÇOS </Button>
       </div>
 
-      <img className={sty.imgVandal} alt="vandal" src="/img/vandal.webp" width={300} height={300} />
+      <img className={sty.imgVandal} alt="vandal" src="../img/vandal.webp" width={300} height={300} />
 
       <Background />
       <div id="service">

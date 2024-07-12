@@ -133,9 +133,14 @@ export default function Duoboost() {
 
     const Whatsapp = () => {
         let message = " *Resumo do pedido:* \n \n"
+        message += "Serviço escolhido \n"
+        message += "*Elojob/eloboost* \n"
+
+        message += "\n"
         message += "*Elo Inicial:* " + selectedInitialElo?.name + "\n"
         message += "*Elo desejado:* " + selectedWishElo?.name + "\n"
         message += "\n"
+
         if (selected.length > 0) {
             message += `*Adicionais:* ${selected.join(", ")} \n`
             message += "\n"
@@ -156,7 +161,7 @@ export default function Duoboost() {
         return encodeURIComponent(message)
     }
 
-    const WhatsappUrl = `https://wa.me/5519993179873?text=${Whatsapp()}`
+    const WhatsappUrl = `https://wa.me/5511949028287?text=${Whatsapp()}`
 
 
     return (
@@ -350,7 +355,7 @@ export default function Duoboost() {
                     </h2>
                 </div>
 
-                <Image className={sty.img} alt="phantom" src="/img/vandalGaia.webp" width={200} height={200} />
+                <img className={sty.img} alt="phantom" src="./img/sentinelaLuz.webp" width={200} height={200} />
 
             </div>
             <Footer />
