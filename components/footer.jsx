@@ -1,6 +1,5 @@
 import { Link } from "@nextui-org/react";
 import styles from "../styles/Componentes/footer.module.css";
-import Image from "next/image";
 import { Modal, ScrollShadow, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 import * as lucide from "lucide-react"
 export default function Footer() {
@@ -12,7 +11,7 @@ export default function Footer() {
             <footer className={styles.footer}>
                 <div className={styles.footerContent}>
                     <div className={styles.footerImage}>
-                        <Image alt="logo" src="/img/logotipobranca.png" width={150} height={150} />
+                        <img alt="logo" src="/logotipobranca.png" width={150} height={150} />
                     </div>
                     <div className={styles.footerLinks}>
                         <h3>SERVIÇOS <lucide Gear /> </h3>
