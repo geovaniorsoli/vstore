@@ -4,9 +4,9 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: none;
-    padding: 30px;
+    padding: 5px;
     color: var(--white);
+    background-color: rgb(0, 0, 0);
 }
 
 .navbarContent {
@@ -59,7 +59,7 @@
 .img {
     max-height: auto;    
     margin: 0 auto;
-    width: 50%;
+    width: 30%;
     display: block;
 }
 
