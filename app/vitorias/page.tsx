@@ -24,7 +24,7 @@ import {
     Link,
     Textarea,
 } from "@nextui-org/react"
-import { elosInitial, elosWish, Elo } from '../array/wins'
+import { elosInitial, Elo } from '../array/wins'
 import * as lucide from "lucide-react"
 import sty from "../../styles/elojob.module.css"
 import NavigationBar from "@/components/nav-bar"
@@ -33,7 +33,7 @@ import Footer from "@/components/footer"
 
 export default function Vitorias() {
     const [selectedInitialElo, setSelectedInitialElo] = useState<Elo | null>(null)
-    const [selectedWishWins, setSelectedWishWins] = useState<Number | null>(null)
+    const [selectedWishWins, setSelectedWishWins] = useState<number | null>(null)
     const { isOpen, onOpen, onOpenChange } = useDisclosure()
     const [agreedTerms, setAgreedTerms] = useState(false)
     const [selected, setSelected] = useState<string[]>([])
