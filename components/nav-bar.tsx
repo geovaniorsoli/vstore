@@ -7,8 +7,8 @@ import { faDiscord, faInstagram, faTiktok, faWhatsapp } from "@fortawesome/free-
 
 export default function NavigationBar() {
     const menuItems = [
-        { text: "DUOBOOST", href: "/elojob" },
-        { text: "ELOJOB", href: "/" },
+        { text: "DUOBOOST", href: "/duoboost" },
+        { text: "ELOJOB", href: "/elojob" },
         { text: "VITÓRIAS", href: "/" },
         { text: "DISCORD", href: "/" },
     ];
@@ -27,7 +27,7 @@ export default function NavigationBar() {
             </NavbarContent>
             <div className={sty.navbarContent}>
                 <div className={sty.navLeft}>
-                    <Link className={sty.navLink} href="#">
+                    <Link className={sty.navLink} href="/duoboost">
                         DUOBOOST
                     </Link>
                     <Link className={sty.navLink} href="/elojob">

@@ -24,7 +24,7 @@ import {
     Link,
     Textarea,
 } from "@nextui-org/react"
-import { elosInitial, elosWish, Elo } from '../array/elo'
+import { elosInitial, elosWish, Elo } from '../array/eloDuo'
 import * as lucide from "lucide-react"
 import sty from "../../styles/elojob.module.css"
 import NavigationBar from "@/components/nav-bar"
@@ -32,7 +32,7 @@ import Footer from "@/components/footer"
 import Image from 'next/image'
 
 
-export default function EloJob() {
+export default function Duoboost() {
     const [selectedInitialElo, setSelectedInitialElo] = useState<Elo | null>(null)
     const [selectedWishElo, setSelectedWishElo] = useState<Elo | null>(null)
     const { isOpen, onOpen, onOpenChange } = useDisclosure()
@@ -119,11 +119,8 @@ export default function EloJob() {
     }, [selected, selectedInitialElo, selectedWishElo])
 
     const additional = [
-        { product: "Nickname Oculto (Cortesia)", value: "Nickname", porcentual: 0, tooltipContent: "Através das configurações do Valorant, ocultaremos seu nickname para que seu nick real não apareça nas partidas do jogo." },
-        { product: "Seleção de Horário (15%)", value: "Horário", porcentual: 15, tooltipContent: "Jogaremos apenas dentro do horário que você definir." },
         { product: "+1 Vitória após conclusão (15%)", value: "Vitória adicional", porcentual: 15, tooltipContent: "Após concluirmos seu pedido, jogaremos mais uma partida garantindo uma vitória!" },
         { product: "Seleção de Agentes (10%)", value: "Agentes", porcentual: 10, tooltipContent: "Jogaremos apenas com os agentes que você escolher. Você pode definir quantos desejar, sem limites!" },
-        { product: "Stream via Discord (25%)", value: "Stream", porcentual: 25, tooltipContent: "Em sessão privada no Discord, iremos transmitir os jogos ao vivo para você ir acompanhando em tempo real o andamento do seu pedido." },
         { product: "Entrega à Jato (35%)", value: "Entrega", porcentual: 35, tooltipContent: "Além de passar na frente de TODOS os pedidos, jogaremos sem parar na sua conta até atingirmos o Elo desejado, garantindo a entrega mais rápida possível!" },
     ]
 
@@ -136,11 +133,6 @@ export default function EloJob() {
 
     const Whatsapp = () => {
         let message = " *Resumo do pedido:* \n \n"
-        message += "Serviço escolhido \n"
-        message += "Elojob/eloboost \n"
-
-        message += "\n"
-        
         message += "*Elo Inicial:* " + selectedInitialElo?.name + "\n"
         message += "*Elo desejado:* " + selectedWishElo?.name + "\n"
         message += "\n"
@@ -172,9 +164,9 @@ export default function EloJob() {
             <NavigationBar />
             <div className={sty.containerMain}>
                 <div className={sty.titlecontainer}>
-                    <h1 className={sty.title}>ELOJOB</h1>
-                    <h2 className={sty.subtitle}> Nesta modalidade, um ProPlayer Radiante irá jogar na sua conta como se fosse você, até atingir o Elo desejado. Ideal para upar rápido com segurança e qualidade! Serviço ágil e discreto.
-                    </h2>
+                    <h1 className={sty.title}>DUOBOOST</h1>
+                    <h2 className={sty.subtitle}>
+                    m ProPlayer jogará com você até você alcançar o Elo desejado. Não é necessário passar os dados da conta, pois um Radiante jogará em outra conta junto com você!                    </h2>
                 </div>
                 <Card className={sty.card}>
                     <CardHeader className={sty.cardHeader}>
@@ -349,7 +341,7 @@ export default function EloJob() {
 
                 <div className={sty.titlecontainer}>
                     <h2 className={sty.subtitle}>
-                        No EloJob/EloBoost, um jogador ProPlayer de nível Radiante irá logar em sua
+                        No DUOBOOST/EloBoost, um jogador ProPlayer de nível Radiante irá logar em sua
                         conta e jogar por você, como se fosse você, e irá upar até o Elo que você
                         contratou. Tudo feito de forma rápida, discreta e segura.
                         Não utilizamos hacks ou qualquer tipo de programa ou recurso que dê vantagem extra --
