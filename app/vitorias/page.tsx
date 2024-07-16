@@ -173,7 +173,7 @@ export default function Vitorias() {
                                 <Avatar
                                     alt={selectedInitialElo?.name || "Default"}
                                     className={sty.selectedAvatar}
-                                    src={selectedInitialElo?.src || "/path/to/default/avatar.png"}
+                                    src={selectedInitialElo?.src || "/avatarNone.png"}
                                 />
                                 <Select
                                     isRequired
@@ -259,7 +259,7 @@ export default function Vitorias() {
                     </CardBody>
                     <Divider />
                     <CardFooter className={sty.cardFooter}>
-                        <h1>Total: R${totalEloPrice.toFixed(2)}</h1>
+                        <h1 className={sty.FinalPrice}>Total: R${totalEloPrice.toFixed(2)}</h1>
                         <Button
                             isDisabled={!selectedInitialElo || !selectedWishWins}
                             color={stateColor()}

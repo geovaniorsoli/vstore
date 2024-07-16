@@ -17,7 +17,7 @@ export default function Footer() {
                         <Link href="/duoboost" color="primary">DuoBoost</Link>
                         <Link href="/elojob" color="primary">Elojob</Link>
                         <Link href="/vitorias" color="primary">Vitórias</Link>
-                        <Link href="/coach" color="primary">Coach</Link>
+                        <Link isDisabled href="/coach" color="primary">Coach</Link>
                     </div>
                     <div className={styles.footerLinks}>
                         <h3>LINKS</h3>
@@ -28,8 +28,8 @@ export default function Footer() {
                     </div>
                     <div className={styles.footerLinks}>
                         <h3>ÁREA DO CLIENTE</h3>
-                        <Button className="mb-2" variant="flat" href="/duoboost" color="primary">Suporte</Button>
-                        <Button onPress={onOpen} variant="flat" href="/elojob" color="primary">Políticas de privacidade</Button>
+                        <Button className="mb-2" variant="flat" color="primary">Suporte</Button>
+                        <Button onPress={onOpen} variant="flat" color="primary">Políticas de privacidade</Button>
                     </div>
                     <div className={styles.footerValorant}>
                         <p>Valorant é uma marca registrada da Riot Games, Inc. Nós não somos de nenhuma forma afiliados, associados ou endossado pela Riot Games, Inc. Todos os direitos autoriais, marcas imagens e marcas de serviço pertecem a seus respectivos proprietários.</p>
@@ -37,7 +37,7 @@ export default function Footer() {
                 </div>
                 <div className={styles.footerCopy}>
                     <p>&copy; {new Date().getFullYear()} Vstore. All rights reserved.</p>
-                    <p>Desenvolvido por Geovaniorsoli</p>
+                    <Link isExternal underline="always" showAnchorIcon href="https://geovaniorsoli.vercel.app/">Desenvolvido por Geovaniorsoli</Link>
                 </div>
             </footer>
 

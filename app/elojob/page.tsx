@@ -186,7 +186,7 @@ export default function EloJob() {
                                 <Avatar
                                     alt={selectedInitialElo?.name || "Default"}
                                     className={sty.selectedAvatar}
-                                    src={selectedInitialElo?.src || "/path/to/default/avatar.png"}
+                                    src={selectedInitialElo?.src || "/avatarNone.png"}
                                 />
                                 <Select
                                     isRequired
@@ -213,7 +213,7 @@ export default function EloJob() {
                                 <Avatar
                                     alt={selectedWishElo?.name || "Default"}
                                     className={sty.selectedAvatar}
-                                    src={selectedWishElo?.src || "/path/to/default/avatar.png"}
+                                    src={selectedWishElo?.src || "/avatarNone.png"}
                                 />
                                 <Select
                                     isRequired
@@ -278,7 +278,7 @@ export default function EloJob() {
                     </CardBody>
                     <Divider />
                     <CardFooter className={sty.cardFooter}>
-                        <h1>Total: R${totalEloPrice.toFixed(2)}</h1>
+                        <h1 className={sty.FinalPrice}>Total: R${totalEloPrice.toFixed(2)}</h1>
                         <Button
                             isDisabled={!selectedInitialElo || !selectedWishElo || selectedInitialElo.value == selectedWishElo.value || selectedInitialElo.value > selectedWishElo.value}
                             color={stateColor()}

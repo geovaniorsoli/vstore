@@ -170,7 +170,7 @@ export default function Duoboost() {
                 <div className={sty.titlecontainer}>
                     <h1 className={sty.title}>DUOBOOST</h1>
                     <h2 className={sty.subtitle}>
-                    m ProPlayer jogará com você até você alcançar o Elo desejado. Não é necessário passar os dados da conta, pois um Radiante jogará em outra conta junto com você!                    </h2>
+                    Um ProPlayer jogará com você até você alcançar o Elo desejado. Não é necessário passar os dados da conta, pois um Radiante jogará em outra conta junto com você!                    </h2>
                 </div>
                 <Card className={sty.card}>
                     <CardHeader className={sty.cardHeader}>
@@ -182,7 +182,7 @@ export default function Duoboost() {
                                 <Avatar
                                     alt={selectedInitialElo?.name || "Default"}
                                     className={sty.selectedAvatar}
-                                    src={selectedInitialElo?.src || "/path/to/default/avatar.png"}
+                                    src={selectedInitialElo?.src || "/avatarNone.png"}
                                 />
                                 <Select
                                     isRequired
@@ -209,7 +209,7 @@ export default function Duoboost() {
                                 <Avatar
                                     alt={selectedWishElo?.name || "Default"}
                                     className={sty.selectedAvatar}
-                                    src={selectedWishElo?.src || "/path/to/default/avatar.png"}
+                                    src={selectedWishElo?.src || "/avatarNone.png"}
                                 />
                                 <Select
                                     isRequired
@@ -274,7 +274,7 @@ export default function Duoboost() {
                     </CardBody>
                     <Divider />
                     <CardFooter className={sty.cardFooter}>
-                        <h1>Total: R${totalEloPrice.toFixed(2)}</h1>
+                        <h1 className={sty.FinalPrice}>Total: R${totalEloPrice.toFixed(2)}</h1>
                         <Button
                             isDisabled={!selectedInitialElo || !selectedWishElo || selectedInitialElo.value == selectedWishElo.value || selectedInitialElo.value > selectedWishElo.value}
                             color={stateColor()}

@@ -1,10 +1,10 @@
 "use client";
+import { useState, useEffect } from "react";
 import { Navbar, Tooltip, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 import Image from "next/image";
 import sty from "../styles/Componentes/nav.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDiscord, faInstagram, faTiktok, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-
 export default function NavigationBar() {
     const menuItems = [
         { text: "DUOBOOST", href: "/duoboost" },
@@ -23,18 +23,35 @@ export default function NavigationBar() {
         { name: "Whatsapp", icon: faWhatsapp, href: "/" },
     ];
 
+    const [isBlurry, setIsBlurry] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY === 0) {
+                setIsBlurry(false);
+            } else {
+                setIsBlurry(true);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <Navbar isBlurred className={sty.navbar}>
+        <Navbar isBlurred={isBlurry} className={sty.navbar}>
             <NavbarContent className="sm:hidden" justify="center">
                 <NavbarMenuToggle />
             </NavbarContent>
             <div className={sty.navbarContent}>
                 <div className={sty.navLeft}>
-                    <Link className={sty.navLink} href="/duoboost">
-                        DUOBOOST
-                    </Link>
                     <Link className={sty.navLink} href="/elojob">
                         ELOJOB
+                    </Link>
+                    <Link className={sty.navLink} href="/duoboost">
+                        DUOBOOST
                     </Link>
                 </div>
                 <div className={sty.navCenter}>
@@ -46,7 +63,7 @@ export default function NavigationBar() {
                     <Link className={sty.navLink} href="/vitorias">
                         VITÓRIAS
                     </Link>
-                    <Link className={sty.navLink} href="#">
+                    <Link isDisabled className={sty.navLink} href="#">
                         COACH
                     </Link>
                     {iconsMedia.map((item, index) => (
