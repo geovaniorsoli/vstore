@@ -86,37 +86,38 @@ export default function Duoboost() {
         return totalEloPrice
     }
 
-    const calculateAdditionalPrice = (): number => {
-        let additionalPrice = 0
+    const calculateAdditionalPrice = (selected: string[], totalEloPrice: number): number => {
+        let additionalPrice = 0;
         selected.forEach(item => {
-            const add = additional.find(add => add.value === item)
+            const add = additional.find(add => add.value === item);
             if (add) {
-                additionalPrice += (totalEloPrice * add.porcentual) / 100
+                additionalPrice += (totalEloPrice * add.porcentual) / 100;
             }
-        })
-        return additionalPrice
-    }
-
+        });
+        return additionalPrice;
+    };
+    
     useEffect(() => {
         if (selectedInitialElo !== null && selectedWishElo !== null) {
             try {
                 if (selectedInitialElo.value > selectedWishElo.value) {
-                    toast.error("O elo atual é maior que o desejado")
+                    toast.error("O elo atual é maior que o desejado");
                 } else if (selectedInitialElo.value === selectedWishElo.value) {
-                    toast.error("Elos iguais")
+                    toast.error("Elos iguais");
                 } else {
-                    toast.success("Selecionado corretamente")
-                    const totalEloPrice = calculatePrice(selectedInitialElo.value, selectedWishElo.value)
-                    const totalAdditionalPrice = calculateAdditionalPrice()
-                    const total = totalEloPrice + totalAdditionalPrice
-                    setTotalPrice(total)
+                    toast.success("Selecionado corretamente");
+                    const newTotalEloPrice = calculatePrice(selectedInitialElo.value, selectedWishElo.value);
+                    const newTotalAdditionalPrice = calculateAdditionalPrice(selected, newTotalEloPrice);
+                    const total = newTotalEloPrice + newTotalAdditionalPrice;
+                    setTotalPrice(total);
                 }
             } catch (error) {
-                console.error("Erro ao calcular preço total:", error)
+                console.error("Erro ao calcular preço total:", error);
             }
         }
     }, [selected, selectedInitialElo, selectedWishElo])
 
+    
     const additional = [
         { product: "+1 Vitória após conclusão (15%)", value: "Vitória adicional", porcentual: 15, tooltipContent: "Após concluirmos seu pedido, jogaremos mais uma partida garantindo uma vitória!" },
         { product: "Seleção de Agentes (10%)", value: "Agentes", porcentual: 10, tooltipContent: "Jogaremos apenas com os agentes que você escolher. Você pode definir quantos desejar, sem limites!" },

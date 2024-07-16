@@ -80,31 +80,36 @@ export default function Vitorias() {
         return (eloPrice * wins)
     }
 
-    const calculateAdditionalPrice = (): number => {
-        let additionalPrice = 0
-        selected.forEach(item => {
-            const add = additional.find(add => add.value === item)
-            if (add) {
-                additionalPrice += (totalEloPrice * add.porcentual) / 100
-            }
-        })
-        return additionalPrice
-    }
-
-    useEffect(() => {
-        if (selectedInitialElo !== null && selectedWishWins !== null) {
-            try {
-                toast.success("Selecionado corretamente")
-                const totalEloPrice = calculatePrice(selectedInitialElo.price, selectedWishWins)
-                const totalAdditionalPrice = calculateAdditionalPrice()
-                const total = totalEloPrice + totalAdditionalPrice
-                setTotalPrice(total)
-            } catch (error) {
-                console.error("Erro ao calcular preço total:", error)
-            }
+const calculateAdditionalPrice = (selected: string[], totalEloPrice: number): number => {
+    let additionalPrice = 0;
+    selected.forEach(item => {
+        const add = additional.find(add => add.value === item);
+        if (add) {
+            additionalPrice += (totalEloPrice * add.porcentual) / 100;
         }
-    }, [selected, selectedInitialElo, selectedWishWins])
+    });
+    return additionalPrice;
+};
 
+useEffect(() => {
+    if (selectedInitialElo !== null && selectedWishWins !== null) {
+        try {
+            if (selectedInitialElo.value > selectedWishWins) {
+                toast.error("O elo atual é maior que o desejado");
+            } else if (selectedInitialElo.value === selectedWishWins) {
+                toast.error("Elos iguais");
+            } else {
+                toast.success("Selecionado corretamente");
+                const newTotalEloPrice = calculatePrice(selectedInitialElo.value, selectedWishWins);
+                const newTotalAdditionalPrice = calculateAdditionalPrice(selected, newTotalEloPrice);
+                const total = newTotalEloPrice + newTotalAdditionalPrice;
+                setTotalPrice(total);
+            }
+        } catch (error) {
+            console.error("Erro ao calcular preço total:", error);
+        }
+    }
+}, [selected, selectedInitialElo, selectedWishWins]);
     const additional = [
         { product: "Nickname Oculto (Cortesia)", value: "Nickname", porcentual: 0, tooltipContent: "Através das configurações do Valorant, ocultaremos seu nickname para que seu nick real não apareça nas partidas do jogo." },
         { product: "Seleção de Horário (15%)", value: "Horário", porcentual: 15, tooltipContent: "Jogaremos apenas dentro do horário que você definir." },

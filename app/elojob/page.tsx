@@ -87,7 +87,7 @@ export default function EloJob() {
         return totalEloPrice
     }
 
-    const calculateAdditionalPrice = (): number => {
+    const calculateAdditionalPrice = (selected: string[], totalEloPrice: number): number => {
         let additionalPrice = 0
         selected.forEach(item => {
             const add = additional.find(add => add.value === item)
@@ -97,7 +97,7 @@ export default function EloJob() {
         })
         return additionalPrice
     }
-
+    
     useEffect(() => {
         if (selectedInitialElo !== null && selectedWishElo !== null) {
             try {
@@ -107,10 +107,10 @@ export default function EloJob() {
                     toast.error("Elos iguais")
                 } else {
                     toast.success("Selecionado corretamente")
-                    const totalEloPrice = calculatePrice(selectedInitialElo.value, selectedWishElo.value)
-                    const totalAdditionalPrice = calculateAdditionalPrice()
-                    const total = totalEloPrice + totalAdditionalPrice
-                    setTotalPrice(total)
+                    const newTotalEloPrice = calculatePrice(selectedInitialElo.value, selectedWishElo.value)
+                    const newTotalAdditionalPrice = calculateAdditionalPrice(selected, newTotalEloPrice)
+                    const total = newTotalEloPrice + newTotalAdditionalPrice
+                    setTotalPrice(total);
                 }
             } catch (error) {
                 console.error("Erro ao calcular preço total:", error)
