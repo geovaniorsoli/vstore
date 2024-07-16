@@ -10,7 +10,7 @@ export default function Footer() {
             <footer className={styles.footer}>
                 <div className={styles.footerContent}>
                     <div className={styles.footerImage}>
-                        <img alt="logo" src="/logotipobranca.png" width={150} height={150} />
+                        <img alt="logo" src="/logotipoBranca.png" width={150} height={150} />
                     </div>
                     <div className={styles.footerLinks}>
                         <h3>SERVIÇOS </h3>

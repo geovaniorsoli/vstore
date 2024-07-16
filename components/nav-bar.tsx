@@ -1,10 +1,10 @@
-"use client";
-import { useState, useEffect } from "react";
-import { Navbar, Tooltip, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
-import Image from "next/image";
-import sty from "../styles/Componentes/nav.module.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDiscord, faInstagram, faTiktok, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+"use client"
+import { useState, useEffect } from "react"
+import { Navbar, Tooltip, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react"
+import Image from "next/image"
+import sty from "../styles/Componentes/nav.module.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDiscord, faInstagram, faTiktok, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 export default function NavigationBar() {
     const menuItems = [
         { text: "DUOBOOST", href: "/duoboost" },
@@ -14,31 +14,24 @@ export default function NavigationBar() {
         { text: "TIKTOK", href: "/" },
         { text: "INSTAGRAM", href: "http://tiktok.com/@vstorefn1" },
         { text: "WHASTAPP", href: "/" },
-    ];
+    ]
 
-    const iconsMedia = [
-        { name: "Discord", icon: faDiscord, href: "/" },
-        { name: "Instagram", icon: faInstagram, href: "https://www.instagram.com/vstorefn/" },
-        { name: "Tiktok", icon: faTiktok, href: "http://tiktok.com/@vstorefn1" },
-        { name: "Whatsapp", icon: faWhatsapp, href: "/" },
-    ];
-
-    const [isBlurry, setIsBlurry] = useState(false);
+    const [isBlurry, setIsBlurry] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY === 0) {
-                setIsBlurry(false);
+                setIsBlurry(false)
             } else {
-                setIsBlurry(true);
+                setIsBlurry(true)
             }
-        };
+        }
 
-        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll)
         return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
 
     return (
         <Navbar isBlurred={isBlurry} className={sty.navbar}>
@@ -66,13 +59,6 @@ export default function NavigationBar() {
                     <Link isDisabled className={sty.navLink} href="#">
                         COACH
                     </Link>
-                    {iconsMedia.map((item, index) => (
-                        <Tooltip color="primary" content={item.name} key={index} placement="bottom">
-                        <Link className={sty.iconNav} key={index} href={item.href}>
-                            <FontAwesomeIcon icon={item.icon} />
-                        </Link>
-                            </Tooltip>
-                    ))}
                 </div>
             </div>
             <img className="sm:hidden" alt="logotipo" src="/logotipoBranca.png" width={100} height={300} />
@@ -86,5 +72,5 @@ export default function NavigationBar() {
                 ))}
             </NavbarMenu>
         </Navbar>
-    );
+    )
 }
