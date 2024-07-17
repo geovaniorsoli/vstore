@@ -10,8 +10,8 @@ export default function NavigationBar() {
         { text: "DUOBOOST", href: "/duoboost" },
         { text: "ELOJOB", href: "/elojob" },
         { text: "VITÓRIAS", href: "/vitorias" },
-        { text: "DISCORD", href: "/" },
-        { text: "TIKTOK", href: "/" },
+        { text: "DISCORD", href: "https://discord.com/invite/SeAWSBVXhE" },
+        { text: "TIKTOK", href: "https://www.tiktok.com/@vstorefn1" },
         { text: "INSTAGRAM", href: "http://tiktok.com/@vstorefn1" },
         { text: "WHASTAPP", href: "/" },
     ]

@@ -4,7 +4,13 @@ import { Modal, ScrollShadow, ModalContent, ModalHeader, ModalBody, ModalFooter,
 export default function Footer() {
 
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
+    const terms = [
+        { text: "1. O cliente não poderá jogar partidas Ranqueadas no período vigente do serviço e também não poderá logar na conta no MOMENTO em que o serviço estiver sendo executado." },
+        { text: "2. Em caso raro de o Booster falhar ou cair de divisão, garantimos integralmente o retorno do elo e classificatória sem custo adicional." },
+        { text: "3. Caso esteja ganhando menos de 17 pontos por vitória, será cobrada a taxa de neutralização de MMR." },
+        { text: " 4. Caso esteja caindo em filas Imortal+, será cobrada uma taxa de MMR Buffado." },
 
+    ]
     return (
         <>
             <footer className={styles.footer}>
@@ -21,15 +27,17 @@ export default function Footer() {
                     </div>
                     <div className={styles.footerLinks}>
                         <h3>LINKS</h3>
-                        <Link href="/duoboost" color="primary">Discord</Link>
+                        <Link href="https://discord.com/invite/SeAWSBVXhE" color="primary">Discord</Link>
                         <Link href="/elojob" color="primary">Whatsapp</Link>
                         <Link href="https://www.instagram.com/vstorefn/" color="primary">Instagram</Link>
                         <Link href="http://tiktok.com/@vstorefn1" color="primary">Tiktok</Link>
                     </div>
                     <div className={styles.footerLinks}>
                         <h3>ÁREA DO CLIENTE</h3>
-                        <Button className="mb-2" variant="flat" color="primary">Suporte</Button>
-                        <Button onPress={onOpen} variant="flat" color="primary">Políticas de privacidade</Button>
+                        
+                            <Button className="mb-2" variant="flat" color="primary">Suporte</Button>
+                            <Button onPress={onOpen} variant="flat" color="primary">Termos de uso</Button>
+
                     </div>
                     <div className={styles.footerValorant}>
                         <p>Valorant é uma marca registrada da Riot Games, Inc. Nós não somos de nenhuma forma afiliados, associados ou endossado pela Riot Games, Inc. Todos os direitos autoriais, marcas imagens e marcas de serviço pertecem a seus respectivos proprietários.</p>
@@ -46,48 +54,16 @@ export default function Footer() {
                 <ModalContent>
                     {(onClose) => (
                         <>
-                            <ModalHeader className="flex flex-col gap-1">Politicas de privacidade e termos</ModalHeader>
+                            <ModalHeader className="flex flex-col gap-1">Termos de uso</ModalHeader>
                             <ModalBody>
                                 <ScrollShadow hideScrollBar className="w-[300px] h-[400px] flex-col items-center justify-center flex ">
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Ex temporibus sit
-                                    soluta non ducimus adipisci, esse tempora
-                                    ipsa consectetur pariatur tenetur eaque quos
-                                    odit facere dolorum hic explicabo? Ab, blanditiis.
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing
-                                    elit. Qui dignissimos quae rerum dolore optio eligendi
-                                    deleniti aperiam cumque doloribus aut at iure quam, nisi l
-                                    abore doloremque. Odio quibusdam consequuntur dolore Lorem
-                                    ipsum, dolor sit amet consectetur adipisicing elit. Commodi
-                                    voluptas atque nihil, natus delectus ducimus unde deserunt
-                                    officia error dignissimos vel impedit reiciendis perferen
-                                    dis minus voluptate est iste praesentium doloremque.
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Ex temporibus sit
-                                    soluta non ducimus adipisci, esse tempora
-                                    ipsa consectetur pariatur tenetur eaque quos
-                                    odit facere dolorum hic explicabo? Ab, blanditiis.
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing
-                                    elit. Qui dignissimos quae rerum dolore optio eligendi
-                                    deleniti aperiam cumque doloribus aut at iure quam, nisi l
-                                    abore doloremque. Odio quibusdam consequuntur dolore Lorem
-                                    ipsum, dolor sit amet consectetur adipisicing elit. Commodi
-                                    voluptas atque nihil, natus delectus ducimus unde deserunt
-                                    officia error dignissimos vel impedit reiciendis perferen
-                                    dis minus voluptate est iste praesentium doloremque.
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Ex temporibus sit
-                                    soluta non ducimus adipisci, esse tempora
-                                    ipsa consectetur pariatur tenetur eaque quos
-                                    odit facere dolorum hic explicabo? Ab, blanditiis.
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing
-                                    elit. Qui dignissimos quae rerum dolore optio eligendi
-                                    deleniti aperiam cumque doloribus aut at iure quam, nisi l
-                                    abore doloremque. Odio quibusdam consequuntur dolore Lorem
-                                    ipsum, dolor sit amet consectetur adipisicing elit. Commodi
-                                    voluptas atque nihil, natus delectus ducimus unde deserunt
-                                    officia error dignissimos vel impedit reiciendis perferen
-                                    dis minus voluptate est iste praesentium doloremque.
+
+                                    {terms.map((item, index) => (
+                                        <span className="mt-2" key={index}>
+                                            {item.text}
+                                        </span>
+                                    ))}
+
                                 </ScrollShadow>
                             </ModalBody>
                             <ModalFooter>

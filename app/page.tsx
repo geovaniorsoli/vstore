@@ -10,7 +10,7 @@ import { faDiscord, faInstagram, faTiktok, faWhatsapp } from "@fortawesome/free-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const iconsMedia = [
-  { name: "Discord", icon: faDiscord, href: "/" },
+  { name: "Discord", icon: faDiscord, href: "https://discord.com/invite/SeAWSBVXhE" },
   { name: "Instagram", icon: faInstagram, href: "https://www.instagram.com/vstorefn/" },
   { name: "Tiktok", icon: faTiktok, href: "http://tiktok.com/@vstorefn1" },
   { name: "Whatsapp", icon: faWhatsapp, href: "/" },
@@ -69,10 +69,10 @@ export default function Home() {
           </Button>
           <div className="flex gap-2 mt-3 justify-center">
           {iconsMedia.map((item, index) => (
-            <Tooltip color="primary" content={item.name} key={index} placement="bottom">
-                <Link className="text-default-800" key={index} href={item.href}>
+            <Tooltip color="secondary" content={item.name} key={index} placement="bottom">
+                <Button color="primary" isExternal={true} className="text-default-" variant="flat" as={Link} isIconOnly key={index} href={item.href}>
                   <FontAwesomeIcon icon={item.icon} />
-                </Link>
+                </Button>
               
             </Tooltip>
           ))}
