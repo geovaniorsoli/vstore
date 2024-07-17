@@ -94,22 +94,18 @@ const calculateAdditionalPrice = (selected: string[], totalEloPrice: number): nu
 useEffect(() => {
     if (selectedInitialElo !== null && selectedWishWins !== null) {
         try {
-            if (selectedInitialElo.value > selectedWishWins) {
-                toast.error("O elo atual é maior que o desejado");
-            } else if (selectedInitialElo.value === selectedWishWins) {
-                toast.error("Elos iguais");
-            } else {
-                toast.success("Selecionado corretamente");
-                const newTotalEloPrice = calculatePrice(selectedInitialElo.value, selectedWishWins);
-                const newTotalAdditionalPrice = calculateAdditionalPrice(selected, newTotalEloPrice);
-                const total = newTotalEloPrice + newTotalAdditionalPrice;
-                setTotalPrice(total);
-            }
+                toast.success("Selecionado corretamente")
+                const totalEloPrice = calculatePrice(selectedInitialElo.price, selectedWishWins)
+                const total = totalEloPrice + calculateAdditionalPrice(selected, totalEloPrice)
+                setTotalPrice(total)
         } catch (error) {
-            console.error("Erro ao calcular preço total:", error);
+                console.error("Erro ao calcular preço total:", error)
         }
     }
-}, [selected, selectedInitialElo, selectedWishWins]);
+    }, [selected, selectedInitialElo, selectedWishWins])
+
+
+
     const additional = [
         { product: "Nickname Oculto (Cortesia)", value: "Nickname", porcentual: 0, tooltipContent: "Através das configurações do Valorant, ocultaremos seu nickname para que seu nick real não apareça nas partidas do jogo." },
         { product: "Seleção de Horário (15%)", value: "Horário", porcentual: 15, tooltipContent: "Jogaremos apenas dentro do horário que você definir." },
