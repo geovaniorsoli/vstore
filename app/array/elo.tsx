@@ -5,14 +5,14 @@ export interface Elo{
     src: string
 }
 
-const ferro = 4
-const bronze = 8
-const prata = 9
-const ouro = 12
-const platina = 17
-const diamante = 27
-const ascendant = 42
-const imortal = 120
+const ferro = 5
+const bronze = 7
+const prata = 10 
+const ouro = 18 
+const platina = 23 
+const diamante = 42 
+const ascendant = 59 
+const imortal = 99 
 
 
 export const elosInitial: Elo[] = [
@@ -37,9 +37,9 @@ export const elosInitial: Elo[] = [
     { name: "Ascendente I", value: 18, price: ascendant, src: "rank/Ascendant_1_Rank.png" },
     { name: "Ascendente II", value: 19, price: ascendant, src: "rank/Ascendant_2_Rank.png" },
     { name: "Ascendente III", value: 20, price: ascendant, src: "rank/Ascendant_3_Rank.png" },
-    { name: "Imortal I", value: 21, price: 85, src: "rank/Immortal_1_Rank.png" },
-    { name: "Imortal II", value: 22,price:  100, src: "rank/Immortal_2_Rank.png" },
-    { name: "Imortal III", value: 23, price: 120, src: "rank/Immortal_3_Rank.png" },
+    { name: "Imortal I", value: 21, price: imortal, src: "rank/Immortal_1_Rank.png" },
+    { name: "Imortal II", value: 22,price:  imortal, src: "rank/Immortal_2_Rank.png" },
+    { name: "Imortal III", value: 23, price: imortal, src: "rank/Immortal_3_Rank.png" },
 ];
 
 export const elosWish: Elo[] = [
@@ -65,8 +65,8 @@ export const elosWish: Elo[] = [
     { name: "Ascendente II", value: 19, price: ascendant, src: "rank/Ascendant_2_Rank.png" },
     { name: "Ascendente III", value: 20, price: ascendant, src: "rank/Ascendant_3_Rank.png" },
     { name: "Imortal I", value: 21, price: imortal, src: "rank/Immortal_1_Rank.png" },
-    { name: "Imortal II", value: 22,price:  120, src: "rank/Immortal_2_Rank.png" },
-    { name: "Imortal III", value: 23, price: 80, src: "rank/Immortal_3_Rank.png" },
+    { name: "Imortal II", value: 22,price:  imortal, src: "rank/Immortal_2_Rank.png" },
+    { name: "Imortal III", value: 23, price: imortal, src: "rank/Immortal_3_Rank.png" },
     { name: "Radiant", value: 24, price: 170, src: "rank/Radiant_Rank.png" },
 ];
 
