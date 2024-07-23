@@ -12,13 +12,14 @@ import sty from "../styles/Componentes/nav.module.css";
 
 export default function NavigationBar() {
     const menuItems = [
+        { text: "HOME", href: "/" },
         { text: "DUOBOOST", href: "/duoboost" },
         { text: "ELOJOB", href: "/elojob" },
         { text: "VITÓRIAS", href: "/vitorias" },
         { text: "DISCORD", href: "https://discord.com/invite/SeAWSBVXhE" },
         { text: "TIKTOK", href: "https://www.tiktok.com/@vstorefn1" },
         { text: "INSTAGRAM", href: "http://tiktok.com/@vstorefn1" },
-        { text: "WHASTAPP", href: "/" },
+        { text: "WHASTAPP", href: "/https://wa.me/5519992871493" },
     ];
 
     const [isBlurry, setIsBlurry] = useState(false);
@@ -30,7 +31,7 @@ export default function NavigationBar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY === 0) {
+            if (window.scrollY === 0 && !isMenuOpen) {
                 setIsBlurry(false);
             } else {
                 setIsBlurry(true);

@@ -34,12 +34,22 @@ export default function Footer() {
                     </div>
                     <div className={styles.footerLinks}>
                         <h3>ÁREA DO CLIENTE</h3>
-                            <Button className="mb-2" variant="flat" color="primary">Suporte</Button>
-                            <Button onClick={onOpen} variant="flat" color="primary">Termos de uso e privacidade</Button>
+                        <Popover color="primary" placement="top" showArrow={true}>
+                            <PopoverTrigger>
+                                <Button className="mb-2" variant="flat" color="primary">Suporte</Button>
+                            </PopoverTrigger>
+                            <PopoverContent> 
+                                <div className="px-1 grid items-center py-3">
+                                    <Link isExternal showAnchorIcon href="https://wa.me/5519992871493" className="text-small text-default- font-bold">Discord</Link>
+                                    <Link isExternal showAnchorIcon href="https://discord.com/invite/SeAWSBVXhE" className="text-small text-default- font-bold">WhatsApp</Link>
+                                </div>
+                            </PopoverContent>
+                        </Popover>
+                        <Button onClick={onOpen} variant="flat" color="primary">Termos de uso e privacidade</Button>
                     </div>
                     <div className={styles.footerLinks}>
                         <h3>FORMAS DE PAGAMENTO</h3>
-                        <img alt="logo" src="/pagamentos.webp" width={250} height={250}/>
+                        <img alt="logo" src="/pagamentos.webp" width={250} height={250} />
                     </div>
                     <div className={styles.footerValorant}>
                         <p>Valorant é uma marca registrada da Riot Games, Inc. Nós não somos de nenhuma forma afiliados, associados ou endossado pela Riot Games, Inc. Todos os direitos autoriais, marcas imagens e marcas de serviço pertecem a seus respectivos proprietários.</p>

@@ -13,11 +13,6 @@
     src: url(/font/OverusedGrotesk-ExtraBold.ttf);
 }
 
-@font-face {
-    font-family: "ATON";
-    src: url(/font/Anton-Regular.ttf);
-}
-
 * {
     font-family: bold;
     margin: 0;
