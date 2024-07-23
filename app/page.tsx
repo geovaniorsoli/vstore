@@ -24,13 +24,13 @@ const cardItems = [
 ]
 
 const textFirstItems = [
-  { title: "SEGURANÇA", content: "Sua conta é 100% segura conosco, ninguém saberá quem jogou na conta.", icon: lucide.Lock },
-  { title: "CONFIABILIDADE", content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati molestias sit, recusandae ipsam delectus cupiditate quia laboriosam itaque illo asperiores ab inventore dolorem optio maiores perferendis maxime. Nostrum, dolor.", icon: lucide.HeartHandshake },
+  { title: "SEGURANÇA, REPUTAÇÃO E CONFIANÇA!", content: "Confiabilidade comprovada por milhares de clientes satisfeitos, garantia de qualidade e ética em cada elojob realizado, processo seguro e confidencial, sem riscos para sua conta, proteção contra banimentos e outras consequências indesejadas", icon: lucide.Lock },
+  { title: "PREÇOS E FLEXIBILIDADE", content: " Oferecemos os melhores preços do mercado, Valor justo pelo serviço excepcional que entregamos, serviços adaptados ao seu horário e necessidades, flexibilidade para personalizar seu pedido conforme desejado.", icon: lucide.HeartHandshake },
 ]
 
 const textSecondItems = [
-  { title: "ENTREGA GARANTIDA", content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati molestias sit, recusandae ipsam delectus cupiditate quia laboriosam itaque illo asperiores ab inventore dolorem optio maiores perferendis maxime. Nostrum, dolor.", icon: lucide.Check },
-  { title: "SUPORTE", content: "Suporte 24 horas via Whatsapp ou Discord para retirar quaisquer dúvidas sobre o seu serviço.", icon: lucide.UserRound },
+  { title: "ENTREGA E PROFISSIONAIS EXPERIENTES", content: "Daremos inicio assim que o pedido for feito, a entrega será rápida e eficiente pois contamos com alguns dos melhores jogadores do servidor brasileiro. Garantimos segurança e qualidade em cada serviço prestado.", icon: lucide.Check },
+  { title: "SUPORTE PERSONALIZADO", content: "Suporte 24h via Whatsapp e Discord, atendimento personalizado para todas as suas necessidades, estamos aqui para ajudar do início ao fim da sua jornada.", icon: lucide.UserRound },
 ]
 
 const menuItems = [

@@ -34,8 +34,9 @@
 }
 
 .Subtitle {
-    font-size: 2rem;
     color: var(--secondary);
+    font-size: 1.3rem;
+    z-index: 57823423431232346112233;
 }
 
 .Content {
@@ -69,9 +70,6 @@
     font-size: 4rem;
 }
 
-.Subtitle {
-    font-size: 2rem;
-}
 
 .cardContainer {
     display: flex;
@@ -251,10 +249,6 @@
     .title {
         color: var(--white);
         margin: 0 auto;
-        font-size: 2rem;
-    }
-
-    .Subtitle {
         font-size: 2rem;
     }
 

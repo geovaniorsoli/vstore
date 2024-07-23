@@ -68,7 +68,7 @@ export const elosWish: Elo[] = [
     { name: "Imortal I", value: 21, price: imortal, src: "rank/Immortal_1_Rank.png" },
     { name: "Imortal II", value: 22,price:  120, src: "rank/Immortal_2_Rank.png" },
     { name: "Imortal III", value: 23, price: 80, src: "rank/Immortal_3_Rank.png" },
-    { name: "Radiant", value: 24, price: 850, src: "rank/Radiant_Rank.png" },
+    { name: "Radiant", value: 24, price: 120, src: "rank/Radiant_Rank.png" },
 ];
 
 
