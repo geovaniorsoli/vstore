@@ -336,7 +336,7 @@ export default function EloJob() {
                                         </Button>
                                     </ModalFooter>
                                     <ModalFooter className='grid justify-center items-center'>
-                                        <Link isExternal showAnchorIcon color="primary" href='https://wa.me/5519992871493?text=Estou%20com%20algumas%20d%C3%BAvidas%20antes%20de%20finalizar%20meu%20pedido,%20poderia%20me%20ajudar?}'>
+                                        <Link isExternal showAnchorIcon color="primary" href='https://wa.me/5519992871493?text=Estou%20com%20algumas%20d%C3%BAvidas%20antes%20de%20finalizar%20meu%20pedido,%20poderia%20me%20ajudar?'>
                                             Ainda tem dúvidas? fale conosco.
                                         </Link>
                                     </ModalFooter>
