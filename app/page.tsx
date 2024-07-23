@@ -13,7 +13,7 @@ const iconsMedia = [
   { name: "Discord", icon: faDiscord, href: "https://discord.com/invite/SeAWSBVXhE" },
   { name: "Instagram", icon: faInstagram, href: "https://www.instagram.com/vstorefn/" },
   { name: "Tiktok", icon: faTiktok, href: "http://tiktok.com/@vstorefn1" },
-  { name: "Whatsapp", icon: faWhatsapp, href: "/" },
+  { name: "Whatsapp", icon: faWhatsapp, href: "https://wa.me/5519992871493" },
 ]
 
 const cardItems = [
