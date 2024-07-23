@@ -80,28 +80,28 @@ export default function Vitorias() {
         return (eloPrice * wins)
     }
 
-const calculateAdditionalPrice = (selected: string[], totalEloPrice: number): number => {
-    let additionalPrice = 0;
-    selected.forEach(item => {
-        const add = additional.find(add => add.value === item);
-        if (add) {
-            additionalPrice += (totalEloPrice * add.porcentual) / 100;
-        }
-    });
-    return additionalPrice;
-};
+    const calculateAdditionalPrice = (selected: string[], totalEloPrice: number): number => {
+        let additionalPrice = 0;
+        selected.forEach(item => {
+            const add = additional.find(add => add.value === item);
+            if (add) {
+                additionalPrice += (totalEloPrice * add.porcentual) / 100;
+            }
+        });
+        return additionalPrice;
+    };
 
-useEffect(() => {
-    if (selectedInitialElo !== null && selectedWishWins !== null) {
-        try {
+    useEffect(() => {
+        if (selectedInitialElo !== null && selectedWishWins !== null) {
+            try {
                 toast.success("Selecionado corretamente")
                 const totalEloPrice = calculatePrice(selectedInitialElo.price, selectedWishWins)
                 const total = totalEloPrice + calculateAdditionalPrice(selected, totalEloPrice)
                 setTotalPrice(total)
-        } catch (error) {
+            } catch (error) {
                 console.error("Erro ao calcular preço total:", error)
+            }
         }
-    }
     }, [selected, selectedInitialElo, selectedWishWins])
 
 
@@ -322,7 +322,7 @@ useEffect(() => {
                                         </Button>
                                     </ModalFooter>
                                     <ModalFooter className='grid justify-center items-center'>
-                                        <Link isExternal showAnchorIcon color="primary" href='/'>
+                                        <Link isExternal showAnchorIcon color="primary" href='https://wa.me/5519992871493?text=Estou%20com%20algumas%20d%C3%BAvidas%20antes%20de%20finalizar%20meu%20pedido,%20poderia%20me%20ajudar?}'>
                                             Ainda tem dúvidas? fale conosco.
                                         </Link>
                                     </ModalFooter>
@@ -334,7 +334,7 @@ useEffect(() => {
 
                 <div className={sty.titlecontainer}>
                     <h2 className={sty.subtitle}>
-                    impulsione sua conta comprando vitórias avulsas ao invés de divisões! Nesta modalidade, você irá receber em sua conta o número líquido de vitórias compradas. Por exemplo: você comprou 2 vitórias, mas o booster ganhou 1 jogo e perdeu o outro. Nesse caso, seu booster deverá jogar 3 partidas no total, ganhando na terceira. Ideal para quem quer garantir o rank de ato, uma partida importante ou melhorar o MMR da conta.                    </h2>
+                        impulsione sua conta comprando vitórias avulsas ao invés de divisões! Nesta modalidade, você irá receber em sua conta o número líquido de vitórias compradas. Por exemplo: você comprou 2 vitórias, mas o booster ganhou 1 jogo e perdeu o outro. Nesse caso, seu booster deverá jogar 3 partidas no total, ganhando na terceira. Ideal para quem quer garantir o rank de ato, uma partida importante ou melhorar o MMR da conta.                    </h2>
                 </div>
 
                 <img className={sty.img} alt="phantom" src="/vandalSaqueadora.webp" width={200} height={200} />

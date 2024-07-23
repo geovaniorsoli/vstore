@@ -197,12 +197,12 @@ export default function EloJob() {
                                 >
                                     {elosInitial.map((item, index) => (
                                         <SelectItem
-                                                key={index}
-                                                value={item.value.toString()}
-                                                startContent={<Avatar alt={item.name} className="w-6 h-6 text-black" src={item.src} />}
-                                            >
-                                                {item.name}
-                                            </SelectItem>
+                                            key={index}
+                                            value={item.value.toString()}
+                                            startContent={<Avatar alt={item.name} className="w-6 h-6 text-black" src={item.src} />}
+                                        >
+                                            {item.name}
+                                        </SelectItem>
                                     ))}
                                 </Select>
                             </div>
@@ -336,7 +336,7 @@ export default function EloJob() {
                                         </Button>
                                     </ModalFooter>
                                     <ModalFooter className='grid justify-center items-center'>
-                                        <Link isExternal showAnchorIcon color="primary" href='/'>
+                                        <Link isExternal showAnchorIcon color="primary" href='https://wa.me/5519992871493?text=Estou%20com%20algumas%20d%C3%BAvidas%20antes%20de%20finalizar%20meu%20pedido,%20poderia%20me%20ajudar?}'>
                                             Ainda tem dúvidas? fale conosco.
                                         </Link>
                                     </ModalFooter>

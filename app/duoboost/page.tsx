@@ -96,7 +96,7 @@ export default function Duoboost() {
         });
         return additionalPrice;
     };
-    
+
     useEffect(() => {
         if (selectedInitialElo !== null && selectedWishElo !== null) {
             try {
@@ -117,7 +117,7 @@ export default function Duoboost() {
         }
     }, [selected, selectedInitialElo, selectedWishElo])
 
-    
+
     const additional = [
         { product: "+1 Vitória após conclusão (15%)", value: "Vitória adicional", porcentual: 15, tooltipContent: "Após concluirmos seu pedido, jogaremos mais uma partida garantindo uma vitória!" },
         { product: "Seleção de Agentes (35%)", value: "Agentes", porcentual: 35, tooltipContent: "Jogaremos apenas com os agentes que você escolher. Você pode definir quantos desejar, sem limites!" },
@@ -171,7 +171,7 @@ export default function Duoboost() {
                 <div className={sty.titlecontainer}>
                     <h1 className={sty.title}>DUOBOOST</h1>
                     <h2 className={sty.subtitle}>
-                    Um ProPlayer jogará com você até você alcançar o Elo desejado. Não é necessário passar os dados da conta, pois um Radiante jogará em outra conta junto com você!                    </h2>
+                        Um ProPlayer jogará com você até você alcançar o Elo desejado. Não é necessário passar os dados da conta, pois um Radiante jogará em outra conta junto com você!                    </h2>
                 </div>
                 <Card className={sty.card}>
                     <CardHeader className={sty.cardHeader}>
@@ -334,7 +334,7 @@ export default function Duoboost() {
                                         </Button>
                                     </ModalFooter>
                                     <ModalFooter className='grid justify-center items-center'>
-                                        <Link isExternal showAnchorIcon color="primary" href='/'>
+                                        <Link isExternal showAnchorIcon color="primary" href='https://wa.me/5519992871493?text=Estou%20com%20algumas%20d%C3%BAvidas%20antes%20de%20finalizar%20meu%20pedido,%20poderia%20me%20ajudar?}'>
                                             Ainda tem dúvidas? fale conosco.
                                         </Link>
                                     </ModalFooter>
