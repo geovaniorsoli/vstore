@@ -20,7 +20,7 @@ export default function NavigationBar() {
         { text: "DISCORD", href: "https://discord.com/invite/SeAWSBVXhE" },
         { text: "TIKTOK", href: "https://www.tiktok.com/@vstorefn1" },
         { text: "INSTAGRAM", href: "http://tiktok.com/@vstorefn1" },
-        { text: "WHASTAPP", href: "/https://wa.me/5519992871493" },
+        { text: "WHATSAPP", href: "/https://wa.me/5519992871493" },
     ];
 
     const [isBlurry, setIsBlurry] = useState(false);
@@ -76,13 +76,15 @@ export default function NavigationBar() {
                     </Link>
                 </div>
             </div>
-            <img
-                className="sm:hidden"
-                alt="logotipo"
-                src="/logotipoBranca.png"
-                width={100}
-                height={300}
-            />
+            <Link className={sty.navLink} href="/">
+                <img
+                    className="sm:hidden"
+                    alt="logotipo"
+                    src="/logotipoBranca.png"
+                    width={100}
+                    height={300}
+                />
+            </Link>
             <NavbarMenu className={`${sty.openNav} ${isMenuOpen ? "bg-gray-800" : ""} sm:bg-transparent`}>
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem className={sty.openNav} key={`${item.text}-${index}`}>
