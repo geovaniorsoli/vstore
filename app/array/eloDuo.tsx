@@ -6,14 +6,15 @@ export interface Elo{
 }
 
 
-const ferro = 7
-const bronze = 12
-const prata = 14
-const ouro = 15
-const platina = 19
-const diamante = 29
-const ascendant = 56
-const imortal = 120
+const ferro = 15
+const bronze = 20
+const prata = (28 - 6)
+const ouro = 40
+const platina = (67 - 7)
+const diamante = (103 - 19)
+const ascendant = (119 - 17)
+const imortal = (200 - 25)
+
 
 
 export const elosInitial: Elo[] = [
@@ -39,8 +40,8 @@ export const elosInitial: Elo[] = [
     { name: "Ascendente II", value: 19, price: ascendant, src: "rank/Ascendant_2_Rank.png" },
     { name: "Ascendente III", value: 20, price: ascendant, src: "rank/Ascendant_3_Rank.png" },
     { name: "Imortal I", value: 21, price: imortal, src: "rank/Immortal_1_Rank.png" },
-    { name: "Imortal II", value: 22,price:  80, src: "rank/Immortal_2_Rank.png" },
-    { name: "Imortal III", value: 23, price: 50, src: "rank/Immortal_3_Rank.png" },
+    { name: "Imortal II", value: 22,price:  imortal, src: "rank/Immortal_2_Rank.png" },
+    { name: "Imortal III", value: 23, price: imortal, src: "rank/Immortal_3_Rank.png" },
 ];
 
 export const elosWish: Elo[] = [
@@ -66,9 +67,9 @@ export const elosWish: Elo[] = [
     { name: "Ascendente II", value: 19, price: ascendant, src: "rank/Ascendant_2_Rank.png" },
     { name: "Ascendente III", value: 20, price: ascendant, src: "rank/Ascendant_3_Rank.png" },
     { name: "Imortal I", value: 21, price: imortal, src: "rank/Immortal_1_Rank.png" },
-    { name: "Imortal II", value: 22, price:  120, src: "rank/Immortal_2_Rank.png" },
-    { name: "Imortal III", value: 23, price: 80, src: "rank/Immortal_3_Rank.png" },
-    { name: "Radiant", value: 24, price: 120, src: "rank/Radiant_Rank.png" },
+    { name: "Imortal II", value: 22, price:  imortal, src: "rank/Immortal_2_Rank.png" },
+    { name: "Imortal III", value: 23, price: imortal, src: "rank/Immortal_3_Rank.png" },
+    { name: "Radiant", value: 24, price: 300, src: "rank/Radiant_Rank.png" },
 ];
 
 

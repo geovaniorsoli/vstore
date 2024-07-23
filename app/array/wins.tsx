@@ -10,9 +10,7 @@ const bronze = 4.5
 const prata = 5.5
 const ouro = 8
 const platina = 10
-const diamante = 29
-const ascendant = 56
-const imortal = 120
+
 
 export const elosInitial: Elo[] = [
     { name: "Ferro I", value: 0, price: ferro,  src: "rank/Iron_1_Rank.png" },
