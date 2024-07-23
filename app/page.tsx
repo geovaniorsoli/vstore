@@ -18,10 +18,10 @@ const iconsMedia = [
 ]
 
 const cardItems = [
-  { title: "DUOBOOST", body: "Você irá jogar duo com um jogador profissional até o elo desejado.", url: "/duoboost" },
-  { title: "ELOJOB", body: "Um jogador profissional irá garantir o elo desejado jogando em sua conta.", url: "/elojob" },
-  { title: "VITÓRIAS", body: "Escolha quantas vitórias deseja receber por um profissional em sua conta.", url: "/vitorias" },
-  { title: "COACH", body: "Melhore sua gameplay através de práticas com professores. (EM BREVE)", url: "/" }
+  { title: "DUOBOOST", body: "Você irá jogar duo com um jogador profissional até o elo desejado.", url: "/duoboost", disabled: false},
+  { title: "ELOJOB", body: "Um jogador profissional irá garantir o elo desejado jogando em sua conta.", url: "/elojob", disabled: false},
+  { title: "VITÓRIAS", body: "Escolha quantas vitórias deseja receber por um profissional em sua conta.", url: "/vitorias", disabled: false},
+  { title: "COACH", body: "Melhore sua gameplay através de práticas com professores. (EM BREVE)", url: "", disabled: true }
 ]
 
 const textFirstItems = [
@@ -89,7 +89,7 @@ export default function Home() {
         <div className={sty.cardContainer}>
           {cardItems.map((item, index) => (
             <Link href={item.url}>
-              <Card key={index} isPressable className={sty.card}>
+              <Card isDisabled={item.disabled} key={index} isPressable className={sty.card}>
                 <CardHeader className={sty.headerCard}>
                   <div className={sty.bodyCard}>
                     <h1>{item.title}</h1>

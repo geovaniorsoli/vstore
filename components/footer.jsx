@@ -1,6 +1,6 @@
 import { Link } from "@nextui-org/react";
 import styles from "../styles/Componentes/footer.module.css";
-import { Modal, ScrollShadow, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Popover, PopoverTrigger, PopoverContent } from "@nextui-org/react";
+import { Modal, ScrollShadow, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Popover, PopoverTrigger, PopoverContent, Tooltip } from "@nextui-org/react";
 export default function Footer() {
 
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -38,7 +38,7 @@ export default function Footer() {
                             <PopoverTrigger>
                                 <Button className="mb-2" variant="flat" color="primary">Suporte</Button>
                             </PopoverTrigger>
-                            <PopoverContent> 
+                            <PopoverContent>
                                 <div className="px-1 grid items-center py-3">
                                     <Link isExternal showAnchorIcon href="https://wa.me/5519992871493" className="text-small text-default- font-bold">Discord</Link>
                                     <Link isExternal showAnchorIcon href="https://discord.com/invite/SeAWSBVXhE" className="text-small text-default- font-bold">WhatsApp</Link>
@@ -57,7 +57,17 @@ export default function Footer() {
                 </div>
                 <div className={styles.footerCopy}>
                     <p>&copy; {new Date().getFullYear()} Vstore. All rights reserved.</p>
-                    <Link isExternal underline="always" showAnchorIcon href="https://geovaniorsoli.vercel.app/">Desenvolvido por Geovaniorsoli</Link>
+                    <Tooltip color="primary" placement="right" content={
+                        <div className="px-1 py-2">
+                            <div className="text-small font-bold">O cara fez o site</div>
+                            <div className="text-tiny">Clica ai para ver mais projetos</div>
+                            <div className="text-tiny">ou fazer o seu comigo</div>
+                        </div>
+                    }
+
+                    >
+                        <Link isExternal underline="always" showAnchorIcon href="https://geovaniorsoli.vercel.app/">Desenvolvido por Geovaniorsoli</Link>
+                    </Tooltip>
                 </div>
             </footer>
 

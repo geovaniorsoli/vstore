@@ -7,6 +7,7 @@ import {
     NavbarMenuItem,
     NavbarContent,
     Link,
+    Tooltip,
 } from "@nextui-org/react";
 import sty from "../styles/Componentes/nav.module.css";
 
