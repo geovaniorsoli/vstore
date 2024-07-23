@@ -109,7 +109,7 @@ useEffect(() => {
     const additional = [
         { product: "Nickname Oculto (Cortesia)", value: "Nickname", porcentual: 0, tooltipContent: "Através das configurações do Valorant, ocultaremos seu nickname para que seu nick real não apareça nas partidas do jogo." },
         { product: "Seleção de Horário (15%)", value: "Horário", porcentual: 15, tooltipContent: "Jogaremos apenas dentro do horário que você definir." },
-        { product: "Seleção de Agentes (10%)", value: "Agentes", porcentual: 10, tooltipContent: "Jogaremos apenas com os agentes que você escolher. Você pode definir quantos desejar, sem limites!" },
+        { product: "Seleção de Agentes (35%)", value: "Agentes", porcentual: 35, tooltipContent: "Jogaremos apenas com os agentes que você escolher. Você pode definir quantos desejar, sem limites!" },
         { product: "Stream via Discord (25%)", value: "Stream", porcentual: 25, tooltipContent: "Em sessão privada no Discord, iremos transmitir os jogos ao vivo para você ir acompanhando em tempo real o andamento do seu pedido." },
         { product: "Entrega à Jato (35%)", value: "Entrega", porcentual: 35, tooltipContent: "Além de passar na frente de TODOS os pedidos, jogaremos sem parar na sua conta até atingirmos o Elo desejado, garantindo a entrega mais rápida possível!" },
     ]
