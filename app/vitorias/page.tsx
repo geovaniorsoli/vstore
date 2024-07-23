@@ -151,7 +151,7 @@ useEffect(() => {
         return encodeURIComponent(message)
     }
 
-    const WhatsappUrl = `https://wa.me/5511949028287?text=${Whatsapp()}`
+    const WhatsappUrl = `https://wa.me/5519992871493?text=${Whatsapp()}`
 
 
     return (

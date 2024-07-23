@@ -80,10 +80,9 @@ export default function EloJob() {
     const calculatePrice = (eloInitial: number, eloFinal: number): number => {
         let totalEloPrice = 0
 
-        for (let index = eloInitial; index <= eloFinal; index++) {
+        for (let index = eloInitial + 1; index <= eloFinal; index++) {
             totalEloPrice += elosWish[index].price
         }
-
         return totalEloPrice
     }
 
@@ -97,7 +96,7 @@ export default function EloJob() {
         })
         return additionalPrice
     }
-    
+
     useEffect(() => {
         if (selectedInitialElo !== null && selectedWishElo !== null) {
             try {
@@ -164,7 +163,7 @@ export default function EloJob() {
         return encodeURIComponent(message)
     }
 
-    const WhatsappUrl = `https://wa.me/5519993179873?text=${Whatsapp()}`
+    const WhatsappUrl = `https://wa.me/5519992871493?text=${Whatsapp()}`
 
 
     return (
@@ -198,12 +197,12 @@ export default function EloJob() {
                                 >
                                     {elosInitial.map((item, index) => (
                                         <SelectItem
-                                            key={index}
-                                            value={item.value.toString()}
-                                            startContent={<Avatar alt={item.name} className="w-6 h-6 text-black" src={item.src} />}
-                                        >
-                                            {item.name}
-                                        </SelectItem>
+                                                key={index}
+                                                value={item.value.toString()}
+                                                startContent={<Avatar alt={item.name} className="w-6 h-6 text-black" src={item.src} />}
+                                            >
+                                                {item.name}
+                                            </SelectItem>
                                     ))}
                                 </Select>
                             </div>
