@@ -37,9 +37,9 @@ export const elosInitial: Elo[] = [
     { name: "Ascendente I", value: 18, price: ascendant, src: "rank/Ascendant_1_Rank.png" },
     { name: "Ascendente II", value: 19, price: ascendant, src: "rank/Ascendant_2_Rank.png" },
     { name: "Ascendente III", value: 20, price: ascendant, src: "rank/Ascendant_3_Rank.png" },
-    { name: "Imortal I", value: 21, price: imortal, src: "rank/Immortal_1_Rank.png" },
-    { name: "Imortal II", value: 22,price:  80, src: "rank/Immortal_2_Rank.png" },
-    { name: "Imortal III", value: 23, price: 50, src: "rank/Immortal_3_Rank.png" },
+    { name: "Imortal I", value: 21, price: 85, src: "rank/Immortal_1_Rank.png" },
+    { name: "Imortal II", value: 22,price:  100, src: "rank/Immortal_2_Rank.png" },
+    { name: "Imortal III", value: 23, price: 120, src: "rank/Immortal_3_Rank.png" },
 ];
 
 export const elosWish: Elo[] = [

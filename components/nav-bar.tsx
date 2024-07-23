@@ -33,17 +33,17 @@ export default function NavigationBar() {
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY === 0 && !isMenuOpen) {
-                setIsBlurry(false);
+                setIsBlurry(false)
             } else {
-                setIsBlurry(true);
+                setIsBlurry(true)
             }
-        };
+        }
 
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+        }
+    }, [])
 
     return (
         <Navbar
