@@ -8,6 +8,7 @@ import * as lucide from "lucide-react"
 import Footer from "../components/footer"
 import { faDiscord, faInstagram, faTiktok, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import WhatsappButton from "@/components/Whastapp"
 
 const iconsMedia = [
   { name: "Discord", icon: faDiscord, href: "https://discord.com/invite/SeAWSBVXhE" },
@@ -54,6 +55,8 @@ const faq = [
 export default function Home() {
   return (
     <>
+          <WhatsappButton />
+
       <NavigationBar />
 
       <div className={sty.containerMain}>
@@ -169,6 +172,7 @@ export default function Home() {
         </Accordion>
       </div>
       <Footer />
+
     </>
   )
 }
