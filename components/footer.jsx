@@ -34,10 +34,12 @@ export default function Footer() {
                     </div>
                     <div className={styles.footerLinks}>
                         <h3>ÁREA DO CLIENTE</h3>
-                        
                             <Button className="mb-2" variant="flat" color="primary">Suporte</Button>
-                            <Button onPress={onOpen} variant="flat" color="primary">Termos de uso</Button>
-
+                            <Button onClick={onOpen} variant="flat" color="primary">Termos de uso e privacidade</Button>
+                    </div>
+                    <div className={styles.footerLinks}>
+                        <h3>FORMAS DE PAGAMENTO</h3>
+                        <img alt="logo" src="/pagamentos.webp" width={250} height={250}/>
                     </div>
                     <div className={styles.footerValorant}>
                         <p>Valorant é uma marca registrada da Riot Games, Inc. Nós não somos de nenhuma forma afiliados, associados ou endossado pela Riot Games, Inc. Todos os direitos autoriais, marcas imagens e marcas de serviço pertecem a seus respectivos proprietários.</p>

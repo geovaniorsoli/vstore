@@ -5,7 +5,7 @@ const BackgroundVideo = () => {
     return (
         <div className={styles.videoContainer}>
             <video className={styles.video} autoPlay loop muted playsInline>
-                <source src="/video/background.mp4" type="video/mp4" />
+                <source src="/video/videoplayback.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className={styles.overlay}></div>
