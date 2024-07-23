@@ -5,14 +5,14 @@ export interface Elo{
     src: string
 }
 
-const ferro = 15
-const bronze = 20
-const prata = (28 - 6)
-const ouro = 40
-const platina = (67 - 7)
-const diamante = (103 - 19)
-const ascendant = (119 - 17)
-const imortal = 200 
+const ferro = 5
+const bronze = 7
+const prata = 10 
+const ouro = 18 
+const platina = 23 
+const diamante = 42 
+const ascendant = 59 
+const imortal = 99 
 
 
 export const elosInitial: Elo[] = [
@@ -67,7 +67,7 @@ export const elosWish: Elo[] = [
     { name: "Imortal I", value: 21, price: imortal, src: "rank/Immortal_1_Rank.png" },
     { name: "Imortal II", value: 22,price:  imortal, src: "rank/Immortal_2_Rank.png" },
     { name: "Imortal III", value: 23, price: imortal, src: "rank/Immortal_3_Rank.png" },
-    { name: "Radiant", value: 24, price: 300, src: "rank/Radiant_Rank.png" },
+    { name: "Radiant", value: 24, price: 200, src: "rank/Radiant_Rank.png" },
 ];
 
 
