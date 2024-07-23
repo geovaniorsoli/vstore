@@ -20,6 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
+      <title> Vstore </title>
       <head />
       <body
         className={clsx(

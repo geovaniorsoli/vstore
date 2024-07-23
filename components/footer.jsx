@@ -1,6 +1,6 @@
 import { Link } from "@nextui-org/react";
 import styles from "../styles/Componentes/footer.module.css";
-import { Modal, ScrollShadow, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import { Modal, ScrollShadow, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Popover, PopoverTrigger, PopoverContent } from "@nextui-org/react";
 export default function Footer() {
 
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
