@@ -11,9 +11,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import WhatsappButton from "@/components/Whastapp"
 
 const iconsMedia = [
-  { name: "Discord", icon: faDiscord, href: "https://discord.com/invite/SeAWSBVXhE" },
+  { name: "Discord", icon: faDiscord, href: "https://discord.gg/QM8qP6W99M" },
   { name: "Instagram", icon: faInstagram, href: "https://www.instagram.com/vstorefn/" },
-  { name: "Tiktok", icon: faTiktok, href: "http://tiktok.com/@vstorefn1" },
+  { name: "Tiktok", icon: faTiktok, href: "https://www.tiktok.com/@vstorevlr?lang=pt-BR" },
   { name: "Whatsapp", icon: faWhatsapp, href: "https://wa.me/5519992871493" },
 ]
 

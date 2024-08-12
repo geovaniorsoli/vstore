@@ -27,10 +27,10 @@ export default function Footer() {
                     </div>
                     <div className={styles.footerLinks}>
                         <h3>LINKS</h3>
-                        <Link href="https://discord.com/invite/SeAWSBVXhE" color="primary">Discord</Link>
+                        <Link href="https://discord.gg/QM8qP6W99M" color="primary">Discord</Link>
                         <Link href="/elojob" color="primary">Whatsapp</Link>
                         <Link href="https://www.instagram.com/vstorefn/" color="primary">Instagram</Link>
-                        <Link href="http://tiktok.com/@vstorefn1" color="primary">Tiktok</Link>
+                        <Link href="https://www.tiktok.com/@vstorevlr?lang=pt-BR" color="primary">Tiktok</Link>
                     </div>
                     <div className={styles.footerLinks}>
                         <h3>ÁREA DO CLIENTE</h3>
@@ -40,8 +40,8 @@ export default function Footer() {
                             </PopoverTrigger>
                             <PopoverContent>
                                 <div className="px-1 grid items-center py-3">
-                                    <Link isExternal showAnchorIcon href="https://wa.me/5519992871493" className="text-small text-default- font-bold">Discord</Link>
-                                    <Link isExternal showAnchorIcon href="https://discord.com/invite/SeAWSBVXhE" className="text-small text-default- font-bold">WhatsApp</Link>
+                                    <Link isExternal showAnchorIcon href="https://wa.me/5519992871493" className="text-small text-default- font-bold">WhatsApp</Link>
+                                    <Link isExternal showAnchorIcon href="https://discord.gg/QM8qP6W99M" className="text-small text-default- font-bold">Discord</Link>
                                 </div>
                             </PopoverContent>
                         </Popover>

@@ -18,7 +18,7 @@ export default function NavigationBar() {
         { text: "ELOJOB", href: "/elojob" },
         { text: "VITÓRIAS", href: "/vitorias" },
         { text: "DISCORD", href: "https://discord.com/invite/SeAWSBVXhE" },
-        { text: "TIKTOK", href: "https://www.tiktok.com/@vstorefn1" },
+        { text: "TIKTOK", href: "https://www.tiktok.com/@vstorevlr?lang=pt-BR" },
         { text: "INSTAGRAM", href: "http://tiktok.com/@vstorefn1" },
         { text: "WHATSAPP", href: "/https://wa.me/5519992871493" },
     ];
