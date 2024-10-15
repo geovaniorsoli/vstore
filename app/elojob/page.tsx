@@ -136,7 +136,7 @@ export default function EloJob() {
     const Whatsapp = () => {
         let message = " *Resumo do pedido:* \n \n"
         message += "Serviço escolhido \n"
-        message += "*Duoboost* \n"
+        message += "*Elojob* \n"
 
         message += "\n"
 

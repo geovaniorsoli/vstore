@@ -134,7 +134,7 @@ export default function Duoboost() {
     const Whatsapp = () => {
         let message = " *Resumo do pedido:* \n \n"
         message += "Serviço escolhido \n"
-        message += "*Elojob/eloboost* \n"
+        message += "*Duoboost* \n"
 
         message += "\n"
         message += "*Elo Inicial:* " + selectedInitialElo?.name + "\n"
