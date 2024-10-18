@@ -12,7 +12,7 @@ import WhatsappButton from "@/components/Whastapp"
 
 const iconsMedia = [
   { name: "Discord", icon: faDiscord, href: "https://discord.gg/QM8qP6W99M" },
-  { name: "Instagram", icon: faInstagram, href: "https://www.instagram.com/vstorefn/" },
+  { name: "Instagram", icon: faInstagram, href: "https://www.instagram.com/vstorevlr/" },
   { name: "Tiktok", icon: faTiktok, href: "https://www.tiktok.com/@vstorevlr?lang=pt-BR" },
   { name: "Whatsapp", icon: faWhatsapp, href: "https://wa.me/5519992871493" },
 ]
@@ -34,15 +34,6 @@ const textSecondItems = [
   { title: "SUPORTE PERSONALIZADO", content: "Suporte 24h via Whatsapp e Discord, atendimento personalizado para todas as suas necessidades, estamos aqui para ajudar do início ao fim da sua jornada.", icon: lucide.UserRound },
 ]
 
-const menuItems = [
-  { text: "DUOBOOST", href: "/duoboost" },
-  { text: "ELOJOB", href: "/elojob" },
-  { text: "VITÓRIAS", href: "/vitorias" },
-  { text: "DISCORD", href: "/" },
-  { text: "TIKTOK", href: "/" },
-  { text: "INSTAGRAM", href: "http://tiktok.com/@vstorefn1" },
-  { text: "WHASTAPP", href: "/" },
-]
 
 const faq = [
   { title: "COMO FUNCIONA?", content: "Depois de selecionar seus produtos, você será direcionado ao nosso WhatsApp, onde finalizaremos sua compra e estaremos à disposição para ajudar sobre o processo da sua conta!" },

@@ -29,7 +29,7 @@ export default function Footer() {
                         <h3>LINKS</h3>
                         <Link href="https://discord.gg/QM8qP6W99M" color="primary">Discord</Link>
                         <Link href="/elojob" color="primary">Whatsapp</Link>
-                        <Link href="https://www.instagram.com/vstorefn/" color="primary">Instagram</Link>
+                        <Link href="https://www.instagram.com/vstorevlr/" color="primary">Instagram</Link>
                         <Link href="https://www.tiktok.com/@vstorevlr?lang=pt-BR" color="primary">Tiktok</Link>
                     </div>
                     <div className={styles.footerLinks}>

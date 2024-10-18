@@ -7,13 +7,13 @@ export interface Elo{
 
 
 const ferro = 15
-const bronze = 20
-const prata = (28 - 6)
-const ouro = 40
-const platina = (67 - 7)
-const diamante = (103 - 19)
-const ascendant = (119 - 17)
-const imortal = (200 - 25)
+const bronze = 15 
+const prata = (22) 
+const ouro = 40 
+const platina = (74 - 20)
+const diamante = (105 - 25)
+const ascendant = (132 - 30)
+const imortal = (175 - 45)
 
 
 
