@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <title> Vstore </title>
+      <link rel="icon" href="/favicon.jpg" />
       <head />
       <body
         className={clsx(
